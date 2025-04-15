@@ -22,12 +22,13 @@ Each waifu has
   - Sum of all waifu prices
   - + gifts
 - Price?
+  - Would waifus be able to say "not for sale"? Or their owners?
 
 Actions:
 - Any user can .hug / .pat a waifu
   - This will boost waifu's stats for free, once daily
-- You get 1 action per day
-    - 6 if you vote
+- You get 2 actions per day
+    - +4 if you vote
     - +1-6 if you're patron
 
 Claiming:
@@ -37,3 +38,12 @@ Clubs:
 - Rename to cartels?
 - Limit members?
 - ???
+
+Quests:
+- Perform a waifu action
+
+Problems:
+- What to do with the current items?
+- How would the new itemization work?
+- Goal?
+-
