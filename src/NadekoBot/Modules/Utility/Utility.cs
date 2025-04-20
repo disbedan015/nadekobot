@@ -819,4 +819,5 @@ public partial class Utility : NadekoModule
         ctx.Message.DeleteAfter(1);
         await Response().Embed(eb).SendAsync();
     }
+
 }

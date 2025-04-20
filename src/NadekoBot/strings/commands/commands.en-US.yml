@@ -5277,3 +5277,10 @@ fishlb:
   params:
     - page:
         desc: "The optional page to display."
+hands:
+  desc: |-
+    Shows currently raised hands in chronological order from your current voice channel.
+  ex:
+    - ''
+  params:
+    - { }

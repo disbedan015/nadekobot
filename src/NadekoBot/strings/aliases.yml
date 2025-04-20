@@ -1692,3 +1692,6 @@ fishinv:
 fishlb:
   - fishlb
   - filb
+hands:
+  - hands
+  - raisedhands
