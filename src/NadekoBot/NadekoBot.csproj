@@ -25,71 +25,71 @@
         </PackageReference>
         <PackageReference Include="CodeHollow.FeedReader" Version="1.2.6"/>
         <PackageReference Include="CommandLineParser" Version="2.9.1"/>
-        <PackageReference Include="Discord.Net" Version="3.17.2" />
-        <PackageReference Include="CoreCLR-NCalc" Version="3.1.253" />
+        <PackageReference Include="Discord.Net" Version="3.17.2"/>
+        <PackageReference Include="CoreCLR-NCalc" Version="3.1.253"/>
         <PackageReference Include="Google.Apis.Urlshortener.v1" Version="1.41.1.138"/>
-        <PackageReference Include="Google.Apis.YouTube.v3" Version="1.68.0.3653" />
+        <PackageReference Include="Google.Apis.YouTube.v3" Version="1.68.0.3653"/>
         <PackageReference Include="Google.Apis.Customsearch.v1" Version="1.49.0.2084"/>
 
-        <PackageReference Include="Google.Protobuf" Version="3.29.3" />
-        <PackageReference Include="Grpc" Version="2.46.6" />
-        <PackageReference Include="Grpc.Net.Client" Version="2.67.0" />
-        <PackageReference Include="Grpc.Tools" Version="2.68.1" PrivateAssets="All" />
+        <PackageReference Include="Google.Protobuf" Version="3.29.3"/>
+        <PackageReference Include="Grpc" Version="2.46.6"/>
+        <PackageReference Include="Grpc.Net.Client" Version="2.67.0"/>
+        <PackageReference Include="Grpc.Tools" Version="2.68.1" PrivateAssets="All"/>
 
-        <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Scripting" Version="4.8.0" />
+        <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Scripting" Version="4.8.0"/>
 
-        <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.1" />
-        <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="9.0.1" />
-        <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="9.0.1" />
+        <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.1"/>
+        <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="9.0.1"/>
+        <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="9.0.1"/>
 
         <PackageReference Include="MorseCode.ITask" Version="2.0.3"/>
         <PackageReference Include="NetEscapades.Configuration.Yaml" Version="3.1.0"/>
 
         <!-- DI -->
-        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.1" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.1"/>
         <PackageReference Include="DryIoc.dll" Version="5.4.3"/>
 
-        <PackageReference Include="Microsoft.Extensions.Http" Version="9.0.1" />
-        <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="9.0.1" />
-        <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.1" />
+        <PackageReference Include="Microsoft.Extensions.Http" Version="9.0.1"/>
+        <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="9.0.1"/>
+        <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.1"/>
         <PackageReference Include="Microsoft.SyndicationFeed.ReaderWriter" Version="1.0.2"/>
         <PackageReference Include="Newtonsoft.Json" Version="13.0.3"/>
         <PackageReference Include="NonBlocking" Version="2.1.2"/>
-        <PackageReference Include="OneOf" Version="3.0.271" />
-        <PackageReference Include="OneOf.SourceGenerator" Version="3.0.271" />
-        <PackageReference Include="Serilog.Sinks.Console" Version="6.0.0" />
-        <PackageReference Include="Serilog.Sinks.Seq" Version="9.0.0" />
+        <PackageReference Include="OneOf" Version="3.0.271"/>
+        <PackageReference Include="OneOf.SourceGenerator" Version="3.0.271"/>
+        <PackageReference Include="Serilog.Sinks.Console" Version="6.0.0"/>
+        <PackageReference Include="Serilog.Sinks.Seq" Version="9.0.0"/>
 
-        <PackageReference Include="SixLabors.Fonts" Version="2.1.0" />
-        <PackageReference Include="SixLabors.ImageSharp" Version="3.1.7" />
-        <PackageReference Include="SixLabors.ImageSharp.Drawing" Version="2.1.5" />
+        <PackageReference Include="SixLabors.Fonts" Version="2.1.0"/>
+        <PackageReference Include="SixLabors.ImageSharp" Version="3.1.7"/>
+        <PackageReference Include="SixLabors.ImageSharp.Drawing" Version="2.1.5"/>
         <PackageReference Include="SixLabors.Shapes" Version="1.0.0-beta0009"/>
-        <PackageReference Include="StackExchange.Redis" Version="2.8.24" />
-        <PackageReference Include="YamlDotNet" Version="15.1.6" />
+        <PackageReference Include="StackExchange.Redis" Version="2.8.24"/>
+        <PackageReference Include="YamlDotNet" Version="15.1.6"/>
         <PackageReference Include="SharpToken" Version="2.0.3"/>
 
-        <PackageReference Include="JetBrains.Annotations" Version="2024.3.0" />
+        <PackageReference Include="JetBrains.Annotations" Version="2024.3.0"/>
 
 
         <!-- Db-related packages -->
-        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.1" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.1"/>
         <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.1">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
 
-        <PackageReference Include="linq2db.EntityFrameworkCore" Version="9.0.0" />
+        <PackageReference Include="linq2db.EntityFrameworkCore" Version="9.0.0"/>
 
-        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.1" />
-        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.3" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.1"/>
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.3"/>
 
-        <PackageReference Include="EFCore.NamingConventions" Version="9.0.0" />
+        <PackageReference Include="EFCore.NamingConventions" Version="9.0.0"/>
 
         <!-- Used by stream notifications -->
-        <PackageReference Include="TwitchLib.Api" Version="3.4.1" />
+        <PackageReference Include="TwitchLib.Api" Version="3.4.1"/>
 
         <!-- sqlselectcsv and stock -->
-        <PackageReference Include="CsvHelper" Version="33.0.1" />
+        <PackageReference Include="CsvHelper" Version="33.0.1"/>
 
     </ItemGroup>
 
@@ -140,11 +140,67 @@
         <DebugSymbols>false</DebugSymbols>
     </PropertyGroup>
 
-    <Target Name="CopyMergedStrings" AfterTargets="AfterCompile">
-        <ItemGroup>
-            <GeneratedJson Include="$(IntermediateOutputPath)generated\strings.g.json" />
-        </ItemGroup>
+    <ItemGroup>
+        <JsonFiles
+            Include="**\*.res.json"
+        />
+    </ItemGroup>
 
-        <Copy SourceFiles="@(GeneratedJson)" DestinationFolder="$(OutputPath)" SkipUnchangedFiles="true" />
+    <ItemGroup>
+        <JsonFiles Include="**\*.json" />
+    </ItemGroup>
+
+    <UsingTask
+        TaskName="MergeJsonTask"
+        TaskFactory="CodeTaskFactory"
+        AssemblyName="Microsoft.Build.Tasks.Core">
+        <ParameterGroup>
+            <JsonFiles   ParameterType="Microsoft.Build.Framework.ITaskItem[]" Required="true" />
+            <OutputFile  ParameterType="System.String"                      Required="true" />
+        </ParameterGroup>
+        <Task>
+            <Reference Include="System.Text.Json" />
+            <Using Namespace="System" />
+            <Using Namespace="System.IO" />
+            <Using Namespace="System.Collections.Generic" />
+            <Using Namespace="System.Text.Json" />
+            <Code Type="Fragment" Language="cs"><![CDATA[
+        var merged = new Dictionary<string, JsonElement>(StringComparer.OrdinalIgnoreCase);
+        foreach (var item in JsonFiles)
+        {
+            var path = item.ItemSpec;
+            if (!File.Exists(path)) continue;
+            using var doc = JsonDocument.Parse(File.ReadAllText(path));
+            foreach (var prop in doc.RootElement.EnumerateObject())
+            {
+                if (!merged.ContainsKey(prop.Name))
+                    merged[prop.Name] = prop.Value.Clone();
+                else
+                    Log.LogWarning($"Duplicate key '{{0}}' in file '{{1}}'", prop.Name, path);
+            }
+        }
+        Directory.CreateDirectory(Path.GetDirectoryName(OutputFile)!);
+        using var fs = File.Create(OutputFile);
+        JsonSerializer.Serialize(fs, merged, new JsonSerializerOptions { WriteIndented = true });
+      ]]></Code>
+        </Task>
+    </UsingTask>
+
+    <!-- 3) Hook it in before build, copy to your output dir -->
+    <Target Name="MergeJsonFiles" BeforeTargets="BeforeBuild">
+        <PropertyGroup>
+            <MergedJsonFile>$(IntermediateOutputPath)merged.json</MergedJsonFile>
+        </PropertyGroup>
+
+        <Message Text="⏳ Merging %(JsonFiles.Identity) → $(MergedJsonFile)" Importance="High" />
+
+        <MergeJsonTask
+            JsonFiles="@(JsonFiles)"
+            OutputFile="$(MergedJsonFile)" />
+
+        <Copy
+            SourceFiles="$(MergedJsonFile)"
+            DestinationFolder="$(OutputPath)"
+            SkipUnchangedFiles="true" />
     </Target>
 </Project>
