@@ -1,0 +1,60 @@
+lineup:
+  desc: |- 
+    Joins the lineup for the current channel. You can optionally add a reason.
+  ex:
+    - ''
+    - 'Need help with setup'
+  params:
+    - { }
+    - reason:
+        desc: "Optional reason for joining."
+
+lineupleave:
+  desc: |- 
+    Leaves the lineup for the current channel.
+  ex:
+    - ''
+  params:
+    - { }
+
+lineuplist:
+  desc: |- 
+    Lists the current lineup for the channel.
+  ex:
+    - ''
+  params:
+    - { }
+
+lineupnext:
+  desc: |- 
+    Calls the next user in the lineup and removes them.
+  ex:
+    - ''
+  params:
+    - { }
+
+lineupcreate:
+  desc: |- 
+    Acknowledges that the lineup system can be used in the current channel. (No real setup needed).
+  ex:
+    - ''
+  params:
+    - { }
+
+lineupremove:
+  desc: |- 
+    Removes a specific user from the lineup.
+  ex:
+    - '@User'
+    - 'UserID'
+  params:
+    - userToRemove:
+        desc: "The user to remove from the lineup."
+
+lineupclear:
+  desc: |- 
+    Removes all users from the lineup in the current channel.
+  ex:
+    - ''
+  params:
+    - { }

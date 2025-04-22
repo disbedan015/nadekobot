@@ -102,6 +102,7 @@
 
     <ItemGroup>
         <AdditionalFiles Include="strings\responses\responses.en-US.json"/>
+        <AdditionalFiles Include="**\strings\*.json"/>
     </ItemGroup>
 
     <ItemGroup>
@@ -138,4 +139,12 @@
         <DebugType>portable</DebugType>
         <DebugSymbols>false</DebugSymbols>
     </PropertyGroup>
+
+    <Target Name="CopyMergedStrings" AfterTargets="AfterCompile">
+        <ItemGroup>
+            <GeneratedJson Include="$(IntermediateOutputPath)generated\strings.g.json" />
+        </ItemGroup>
+
+        <Copy SourceFiles="@(GeneratedJson)" DestinationFolder="$(OutputPath)" SkipUnchangedFiles="true" />
+    </Target>
 </Project>
