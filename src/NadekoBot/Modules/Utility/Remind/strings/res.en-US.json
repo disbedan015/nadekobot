@@ -1,0 +1,14 @@
+{
+  "remind_invalid": "Not a valid remind format. Remind must have a target, timer and a reason. Check the command list.",
+  "remind_too_long": "Remind time has exceeded maximum.",
+  "cant_read_or_send": "You can't read from or send messages to that channel.",
+  "reminder_server_list": "List of server reminders",
+  "reminder_list": "List of reminders",
+  "reminders_none": "No reminder on this page.",
+  "reminder_not_exist": "Reminder at that index does not exist.",
+  "reminder_deleted": "Reminder #{0} was deleted.",
+  "reminder_created": "Reminder Created",
+  "who_where": "Who / Where",
+  "when": "When",
+  "date2": "Date"
+}

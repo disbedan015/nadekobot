@@ -1,0 +1,6 @@
+{
+  "convertlist": "Units which can be used by the converter",
+  "convert_not_found": "Cannot convert {0} to {1}: units not found",
+  "convert_type_error": "Cannot convert {0} to {1}: types of unit are not equal",
+  "convert": "{0} {1} is equal to {2} {3}"
+}

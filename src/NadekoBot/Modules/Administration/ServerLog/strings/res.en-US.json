@@ -1,0 +1,13 @@
+{
+  "log_all": "Logging all events in this channel.",
+  "log_disabled": "Logging disabled.",
+  "log_ignored_channels": "Ignored Channels",
+  "log_ignored_users": "Ignored Users",
+  "log_ignore_chan": "Logging will ignore channel {0}",
+  "log_not_ignore_chan": "Logging will no longer ignore channel {0}",
+  "log_ignore_user": "Logging will ignore user {0}",
+  "log_not_ignore_user": "Logging will no longer ignore user {0}",
+  "log_events": "Log events you can subscribe to:",
+  "log": "Logging {0} event in this channel.",
+  "log_stop": "Stopped logging {0} event."
+}

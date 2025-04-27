@@ -101,7 +101,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <AdditionalFiles Include="strings\responses\responses.en-US.json" />
+        <AdditionalFiles Include="**\strings\res*.json" />
         <AdditionalFiles Include="**\strings\*.json" />
     </ItemGroup>
 
