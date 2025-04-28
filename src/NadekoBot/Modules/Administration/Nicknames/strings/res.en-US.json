@@ -1,0 +1,6 @@
+{
+  "bot_nick": "Bot's nickname changed to {0}",
+  "insuf_perms_i": "I have insufficient permissions.",
+  "user_nick": "Nickname of the user {0} changed to {1}",
+  "nick_removed": "Nickname for {0} has been removed."
+}

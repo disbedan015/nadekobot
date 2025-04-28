@@ -1,0 +1,21 @@
+imageonlychannel:
+  desc: Toggles image-only mode for the current channel. Users without ManageMessages permission won't be able to post messages without images.
+  ex:
+    - ''
+linkonlychannel:
+  desc: Toggles link-only mode for the current channel. Users without ManageMessages permission won't be able to post messages without links.
+  ex:
+    - ''
+slowmode:
+  desc: Sets slowmode in the current channel. Set to 0 to disable.
+  ex:
+    - '5s'
+    - '1m30s'
+    - '0'
+  params:
+    - timespan:
+        desc: The slowmode interval (e.g., 5s, 1m). Max 6h.
+agerestricttoggle:
+  desc: Toggles the NSFW (Age Restricted) setting for the current channel.
+  ex:
+    - ''

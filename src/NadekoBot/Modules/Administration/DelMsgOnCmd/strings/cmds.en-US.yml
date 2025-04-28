@@ -1,0 +1,21 @@
+```yaml
+delmsgoncmd:
+  desc: Toggles automatic deletion of successful command messages. Can be configured per-channel.
+  ex:
+    - server
+    - ch enable #some-channel
+    - ch disable
+    - ch inherit
+    - list
+  params:
+    - server:
+        desc: Toggles the server-wide setting.
+    - channel:
+        desc: Keyword to specify channel settings.
+      state:
+        desc: '`enable` / `disable` / `inherit`. Enable or disable for a channel, or inherit from the server setting.'
+      channel:
+        desc: Optional channel. If not provided, uses the current channel.
+    - _: 
+        desc: Keyword 'list' to show current settings.
+```

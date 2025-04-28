@@ -1,0 +1,16 @@
+setserverbanner:
+  desc: Sets the server banner using a direct image URL or an attached image. Requires server boost Tier 2+.
+  ex:
+    - 'https://example.com/banner.png'
+    - (with image attached)
+  params:
+    - img:
+        desc: Direct URL to the banner image (png/jpg). Leave empty if attaching an image.
+setservericon:
+  desc: Sets the server icon using a direct image URL or an attached image.
+  ex:
+    - 'https://example.com/icon.png'
+    - (with image attached)
+  params:
+    - img:
+        desc: Direct URL to the icon image (png/jpg). Leave empty if attaching an image.

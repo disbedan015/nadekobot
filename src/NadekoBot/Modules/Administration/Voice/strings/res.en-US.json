@@ -1,0 +1,6 @@
+{
+  "deafen": "Deafen successful.",
+  "undeafen": "UnDeafen successful.",
+  "delvoich": "Voice channel {0} deleted.",
+  "createvoich": "Voice channel {0} created."
+}

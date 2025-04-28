@@ -1,0 +1,8 @@
+setserverbanner:
+  - setserverbanner
+  - setbanner
+  - ssb
+setservericon:
+  - setservericon
+  - seticon
+  - ssi

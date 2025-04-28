@@ -1,0 +1,6 @@
+{
+  "insuf_perms_u": "You have insufficient permissions.",
+  "insuf_perms_i": "I have insufficient permissions.",
+  "msg_not_found": "Message not found.",
+  "time_too_long": "Time you've specified is too long."
+}

@@ -1,0 +1,32 @@
+deafen:
+  desc: Deafens mentioned user(s) or users with specified IDs.
+  ex:
+    - "@User"
+    - "@User1 @User2"
+    - "123123123 456456456"
+  params:
+    - users:
+        desc: One or more users to deafen.
+undeafen:
+  desc: Undeafens mentioned user(s) or users with specified IDs.
+  ex:
+    - "@User"
+    - "@User1 @User2"
+    - "123123123 456456456"
+  params:
+    - users:
+        desc: One or more users to undeafen.
+delvoichanl:
+  desc: Deletes a voice channel with the specified name.
+  ex:
+    - "General Voice"
+  params:
+    - voiceChannel:
+        desc: The name of the voice channel to delete.
+creatvoichanl:
+  desc: Creates a new voice channel with the specified name.
+  ex:
+    - "Music Voice"
+  params:
+    - channelName:
+        desc: The name for the new voice channel.
