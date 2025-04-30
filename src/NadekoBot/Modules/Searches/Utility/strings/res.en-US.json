@@ -1,0 +1,9 @@
+{
+  "error_occured": "Error occurred.",
+  "original_url": "Original url",
+  "short_url": "Short url",
+  "specify_search_params": "Please specify search parameters.",
+  "api_key_missing": "Api key missing.",
+  "invalid_input": "Invalid input.",
+  "not_found": "Not found."
+}

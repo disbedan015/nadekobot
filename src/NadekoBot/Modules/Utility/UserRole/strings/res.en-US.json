@@ -1,5 +1,5 @@
 {
-  "hierarchy": "You can't change roles higher than your highest role.",
+  "hierarchy": "You can't use this command on users with a role higher or equal than yours (or mine) in the role hierarchy.",
   "userrole_assigned": "{0} has been assigned the role {1}.",
   "userrole_not_found": "Role not found or not assigned to you.",
   "userrole_removed": "{0} has been removed from the role {1}.",

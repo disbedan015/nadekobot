@@ -1,16 +1,16 @@
 {
-  "lineup_join_success": "{0} has joined the lineup at position #{1}.",
-  "lineup_already_in": "{0} is already in the lineup at position #{1}.",
-  "lineup_leave_success": "{0} has left the lineup.",
-  "lineup_not_in": "{0} is not in the lineup.",
-  "lineup_next_user": "Next up is {0}!",
+  "lineup_join_success": "Successfully joined the lineup at position {1}.",
+  "lineup_already_in": "You are already in the lineup at position {1}.",
+  "lineup_leave_success": "Successfully left the lineup.",
+  "lineup_not_in": "You are not in the lineup.",
   "lineup_empty": "The lineup is currently empty.",
   "lineup_list_title": "Lineup for #{0}",
-  "lineup_added_at": "Added at {0:HH:mm}",
-  "user_not_found": "User Not Found",
-  "lineup_created": "Lineup system is ready for use in #{0}. Users can join with `.lineup`.",
-  "lineup_already_active": "Lineup system is already active in #{0}.",
-  "lineup_removed": "{0} has been removed from the lineup.",
-  "lineup_remove_fail": "{0} was not found in the lineup.",
-  "lineup_cleared": "Lineup cleared. Removed {0} users."
+  "lineup_added_at": "added at {0}",
+  "user_not_found": "User not found.",
+  "lineup_next_user": "Next in line: {0}",
+  "lineup_already_active": "A lineup is already active in this channel.",
+  "lineup_created": "Lineup created for this channel.",
+  "lineup_removed": "Successfully removed {0} from the lineup.",
+  "lineup_remove_fail": "Failed to remove {0} from the lineup. They might not be in it.",
+  "lineup_cleared": "The lineup has been cleared. {0} users were removed."
 }

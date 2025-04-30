@@ -17,7 +17,8 @@
   "name": "Name",
   "nickname": "Nickname",
   "joined_server": "Joined server",
-  "joined_discord": "Joined Discord",
+  "joined_discord": "Joined Discord"
+,
   "no_invites": "No invites on this page.",
   "inv_uses": "Uses:",
   "inv_expire": "Expires in:",

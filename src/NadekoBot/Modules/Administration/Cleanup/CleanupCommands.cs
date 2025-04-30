@@ -1,4 +1,4 @@
-﻿using NadekoBot.Modules.Administration.DangerousCommands;
+﻿using NadekoBot.Modules.Administration.Cleanup;
 
 namespace NadekoBot.Modules.Administration;
 

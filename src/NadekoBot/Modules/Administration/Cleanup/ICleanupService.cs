@@ -1,4 +1,4 @@
-﻿namespace NadekoBot.Modules.Administration.DangerousCommands;
+﻿namespace NadekoBot.Modules.Administration.Cleanup;
 
 public interface ICleanupService
 {

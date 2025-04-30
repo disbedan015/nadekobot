@@ -5,7 +5,7 @@ using LinqToDB.Mapping;
 using NadekoBot.Common.ModuleBehaviors;
 using NadekoBot.Db.Models;
 
-namespace NadekoBot.Modules.Administration.DangerousCommands;
+namespace NadekoBot.Modules.Administration.Cleanup;
 
 public sealed class CleanupService : ICleanupService, IReadyExecutor, INService
 {

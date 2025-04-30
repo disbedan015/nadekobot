@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace NadekoBot.Modules.Administration.DangerousCommands;
+namespace NadekoBot.Modules.Administration.Cleanup;
 
 public sealed class CleanupId
 {
