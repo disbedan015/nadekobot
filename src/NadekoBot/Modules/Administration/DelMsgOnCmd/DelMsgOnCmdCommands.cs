@@ -1,44 +1,35 @@
-```csharp
 #nullable disable
-using NadekoBot.Common.Attributes;
-using NadekoBot.Extensions;
-using NadekoBot.Modules.Administration.Services;
-using System.Linq;
-using System.Threading.Tasks;
-using Discord;
-using Discord.WebSocket;
-
 namespace NadekoBot.Modules.Administration;
+
+public enum List
+{
+    List = 0,
+    Ls = 0
+}
+
+public enum Server
+{
+    Server
+}
+
+public enum Channel
+{
+    Channel,
+    Ch,
+    Chnl,
+    Chan
+}
+
+public enum State
+{
+    Enable,
+    Disable,
+    Inherit
+}
 
 [Group]
 public partial class DelMsgOnCmdCommands(AdministrationService service) : NadekoModule<AdministrationService>
 {
-    public enum List
-    {
-        List = 0,
-        Ls = 0
-    }
-
-    public enum Server
-    {
-        Server
-    }
-
-    public enum Channel
-    {
-        Channel,
-        Ch,
-        Chnl,
-        Chan
-    }
-
-    public enum State
-    {
-        Enable,
-        Disable,
-        Inherit
-    }
-
     [Cmd]
     [RequireContext(ContextType.Guild)]
     [UserPerm(GuildPerm.Administrator)]
@@ -50,9 +41,9 @@ public partial class DelMsgOnCmdCommands(AdministrationService service) : Nadeko
         var (enabled, channels) = await service.GetDelMsgOnCmdData(ctx.Guild.Id);
 
         var embed = CreateEmbed()
-                    .WithOkColor()
-                    .WithTitle(GetText(strs.server_delmsgoncmd))
-                    .WithDescription(enabled ? "✅" : "❌");
+            .WithOkColor()
+            .WithTitle(GetText(strs.server_delmsgoncmd))
+            .WithDescription(enabled ? "✅" : "❌");
 
         var str = string.Join("\n",
             channels.Select(x =>
@@ -114,4 +105,3 @@ public partial class DelMsgOnCmdCommands(AdministrationService service) : Nadeko
             await Response().Confirm(strs.delmsg_channel_inherit).SendAsync();
     }
 }
-```

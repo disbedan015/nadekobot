@@ -1,4 +1,3 @@
-```csharp
 #nullable disable
 using NadekoBot.Common.Attributes;
 using NadekoBot.Extensions;
@@ -52,4 +51,3 @@ public partial class VoiceCommands(AdministrationService service) : NadekoModule
         await Response().Confirm(strs.createvoich(Format.Bold(ch.Name))).SendAsync();
     }
 }
-```

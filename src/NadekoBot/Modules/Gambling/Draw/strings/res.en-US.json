@@ -1,0 +1,12 @@
+{
+  "no_more_cards": "No more cards in the deck.",
+  "hand_value": "Hand value",
+  "cards_left": "{0} cards left in the deck.",
+  "cards": "Cards",
+  "deck_reshuffled": "Deck reshuffled.",
+  "not_enough": "You don't have enough {0}",
+  "guess": "Guess",
+  "card": "Card",
+  "bet": "Bet",
+  "won": "Won"
+}

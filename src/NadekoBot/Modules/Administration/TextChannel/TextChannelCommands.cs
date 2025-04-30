@@ -1,4 +1,3 @@
-```csharp
 #nullable disable
 using NadekoBot.Common.Attributes;
 using NadekoBot.Extensions;
@@ -57,4 +56,3 @@ public partial class TextChannelCommands(AdministrationService service) : Nadeko
         await Response().Confirm(strs.set_channel_name).SendAsync();
     }
 }
-```

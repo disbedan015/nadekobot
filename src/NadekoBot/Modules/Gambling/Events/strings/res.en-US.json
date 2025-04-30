@@ -1,0 +1,7 @@
+{
+  "start_event_fail": "Event failed to start. Another event is running, or there was an error starting the event.",
+  "event_title": "{0} event started!",
+  "event_duration_footer": "This event is active for up to {0} hours.",
+  "new_reaction_event": "Add {0} reaction to this message to get {1}\n{2} left to be awarded.",
+  "new_gamestatus_event": "Type the secret code in any channel to receive {1}\n{2} left to be awarded."
+}

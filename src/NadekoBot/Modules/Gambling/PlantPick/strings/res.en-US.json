@@ -1,0 +1,6 @@
+{
+  "picked": "{1} picked {0}",
+  "not_enough": "You don't have enough {0}",
+  "curgen_enabled": "Currency generation has been enabled on this channel.",
+  "curgen_disabled": "Currency generation has been disabled on this channel."
+}

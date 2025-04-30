@@ -1,4 +1,3 @@
-```csharp
 #nullable disable
 using NadekoBot.Common.Attributes;
 using NadekoBot.Modules.Administration.Services;
@@ -68,4 +67,3 @@ public partial class ServerAppearanceCommands(AdministrationService service) : N
         }
     }
 }
-```

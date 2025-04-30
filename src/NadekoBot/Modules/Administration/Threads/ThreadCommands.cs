@@ -1,4 +1,3 @@
-```csharp
 #nullable disable
 using NadekoBot.Common.Attributes;
 using System;
@@ -45,4 +44,3 @@ public partial class ThreadCommands : NadekoModule
         await ctx.OkAsync();
     }
 }
-```

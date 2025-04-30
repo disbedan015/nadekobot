@@ -1,0 +1,10 @@
+{
+  "bank_deposited": "You deposited {0} to your bank account.",
+  "not_enough": "You don't have enough {0}",
+  "bank_withdrew": "You withdrew {0} from your bank account.",
+  "bank_withdraw_insuff": "You don't have sufficient {0} in your bank account.",
+  "bank_balance": "You have {0} in your bank account.",
+  "cant_dm": "I can't dm you. Make sure your DMs are open. Go to **options (cog button) -> Privacy & Safety -> Allow direct messages from server members**",
+  "bank_balance_other": "User {0} has {1} in the bank.",
+  "take_fail": "was unable to take {0} from {1} because the user doesn't have that much {2}!"
+}
