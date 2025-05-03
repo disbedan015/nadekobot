@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace NadekoBot.Modules.Utility.LineUp;
 
-public partial class LineUpCommands(LineUpService service, GuildTimezoneService timezones) 
+public partial class LineUpCommands(LineUpService service, GuildTimezoneService timezones)
     : NadekoModule<LineUpService>
 {
     private readonly GuildTimezoneService _tzs = timezones;
@@ -40,9 +40,9 @@ public partial class LineUpCommands(LineUpService service, GuildTimezoneService 
         var success = await _service.TryLeaveLineupAsync(ctx.Guild.Id, ctx.Channel.Id, ctx.User.Id);
 
         if (success)
-            await Response().Confirm(strs.lineup_leave_success(Format.Bold(ctx.User.ToString()))).SendAsync();
+            await Response().Confirm(strs.lineup_leave_success).SendAsync();
         else
-            await Response().Error(strs.lineup_not_in(Format.Bold(ctx.User.ToString()))).SendAsync();
+            await Response().Error(strs.lineup_not_in).SendAsync();
     }
 
     [Cmd]
@@ -76,9 +76,9 @@ public partial class LineUpCommands(LineUpService service, GuildTimezoneService 
 
         await Response().Embed(embed).SendAsync();
     }
-    
+
     // Moderator Commands
-    
+
     [Cmd]
     [RequireContext(ContextType.Guild)]
     [UserPerm(GuildPerm.ManageMessages)]
@@ -104,14 +104,14 @@ public partial class LineUpCommands(LineUpService service, GuildTimezoneService 
     {
         // Check if anyone is already in line. If so, maybe warn? Or just confirm.
         var lineup = await _service.GetLineupAsync(ctx.Guild.Id, ctx.Channel.Id);
-        if(lineup.Count > 0)
+        if (lineup.Count > 0)
         {
-            await Response().Confirm(strs.lineup_already_active(ctx.Channel.Name)).SendAsync();
+            await Response().Confirm(strs.lineup_already_active).SendAsync();
             return;
         }
 
         // Just confirm that lineups can now be used in this channel
-        await Response().Confirm(strs.lineup_created(ctx.Channel.Name)).SendAsync();
+        await Response().Confirm(strs.lineup_created).SendAsync();
     }
 
     [Cmd]
@@ -126,15 +126,15 @@ public partial class LineUpCommands(LineUpService service, GuildTimezoneService 
         else
             await Response().Error(strs.lineup_remove_fail(Format.Bold(userToRemove.ToString()))).SendAsync();
     }
-    
+
     [Cmd]
     [RequireContext(ContextType.Guild)]
     [UserPerm(GuildPerm.ManageMessages)]
     public async Task LineUpClear()
     {
         var count = await _service.ClearLineupAsync(ctx.Guild.Id, ctx.Channel.Id);
-        
-        if(count == 0)
+
+        if (count == 0)
             await Response().Confirm(strs.lineup_empty).SendAsync();
         else
             await Response().Confirm(strs.lineup_cleared(count)).SendAsync();
