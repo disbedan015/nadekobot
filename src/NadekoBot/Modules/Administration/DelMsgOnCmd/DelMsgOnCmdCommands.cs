@@ -12,7 +12,7 @@ public enum Server
     Server
 }
 
-public enum Channel
+public enum _Channel
 {
     Channel,
     Ch,
@@ -84,7 +84,7 @@ public partial class DelMsgOnCmdCommands(AdministrationService service) : Nadeko
     [UserPerm(GuildPerm.Administrator)]
     [BotPerm(GuildPerm.ManageMessages)]
     [Priority(0)]
-    public Task Delmsgoncmd(Channel _, State s, ITextChannel ch)
+    public Task Delmsgoncmd(_Channel _, State s, ITextChannel ch)
         => Delmsgoncmd(_, s, ch.Id);
 
     [Cmd]
@@ -92,7 +92,7 @@ public partial class DelMsgOnCmdCommands(AdministrationService service) : Nadeko
     [UserPerm(GuildPerm.Administrator)]
     [BotPerm(GuildPerm.ManageMessages)]
     [Priority(1)]
-    public async Task Delmsgoncmd(Channel _, State s, ulong? chId = null)
+    public async Task Delmsgoncmd(_Channel _, State s, ulong? chId = null)
     {
         var actualChId = chId ?? ctx.Channel.Id;
         await service.SetDelMsgOnCmdState(ctx.Guild.Id, actualChId, s);

@@ -1,5 +1,4 @@
 ﻿#nullable disable
-using System.Net;
 using LinqToDB;
 using LinqToDB.EntityFrameworkCore;
 using NadekoBot.Common.ModuleBehaviors;

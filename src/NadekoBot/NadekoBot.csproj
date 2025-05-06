@@ -101,8 +101,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <AdditionalFiles Include="**\strings\res*.json" />
-        <AdditionalFiles Include="**\strings\*.json" />
+        <AdditionalFiles Include="**\strings\*.yml" />
     </ItemGroup>
 
     <ItemGroup>
@@ -145,7 +144,7 @@
         AssemblyFile="../NadekoBot.StringsMerger/bin/Debug/netstandard2.0/NadekoBot.StringsMerger.dll" />
 
     <ItemGroup>
-        <JsonToMerge Include="**/strings/res.*.json" />
+        <JsonToMerge Include="**/strings/res*.yml" />
 <!--        <CmdsYmlToMerge Include="**\cmds.*.yml" />-->
 <!--        <NamesToMerge Include="**\names.yml" />-->
     </ItemGroup>

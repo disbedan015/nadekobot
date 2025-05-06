@@ -1,9 +1,5 @@
 #nullable disable
-using NadekoBot.Common.Attributes;
 using NadekoBot.Modules.Administration.Services;
-using System.Threading.Tasks;
-using Discord;
-using Discord.WebSocket;
 
 namespace NadekoBot.Modules.Administration.Announcement;
 

@@ -1,5 +1,4 @@
-﻿using NadekoBot.Db.Models;
-using NadekoBot.Modules.Patronage;
+﻿using NadekoBot.Modules.Patronage;
 using SixLabors.Fonts;
 using SixLabors.Fonts.Unicode;
 using SixLabors.ImageSharp;

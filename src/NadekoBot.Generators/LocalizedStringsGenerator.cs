@@ -3,8 +3,8 @@ using System.CodeDom.Compiler;
 using System.Diagnostics;
 using System.Text.RegularExpressions;
 using Microsoft.CodeAnalysis;
-using Microsoft.CodeAnalysis.Text;
-using Newtonsoft.Json;
+using YamlDotNet.Core;
+using YamlDotNet.Serialization;
 
 namespace NadekoBot.Generators
 {
@@ -42,11 +42,8 @@ namespace NadekoBot.Generators
         {
         }
 
-        private readonly Regex _regex = new(@"strings\/res.*\.json");
-        public async void Execute(GeneratorExecutionContext context)
+        public void Execute(GeneratorExecutionContext context)
         {
-            var file = context.AdditionalFiles.First(x => _regex.IsMatch(x.Path));
-
             var mergedDict = new Dictionary<string, string>();
 
             foreach (var additionalFile in context.AdditionalFiles)
@@ -118,28 +115,37 @@ namespace NadekoBot.Generators
 
         private List<TranslationPair> GetFields(string? dataText)
         {
+            return [];
+            
             if (string.IsNullOrWhiteSpace(dataText))
                 return new();
 
             Dictionary<string, string> data;
             try
             {
-                var output = JsonConvert.DeserializeObject<Dictionary<string, string>>(dataText!);
-                if (output is null)
-                    return new();
+                var deserializer = new DeserializerBuilder()
+                    .IgnoreUnmatchedProperties()
+                    .Build();
 
-                data = output;
+                data = deserializer.Deserialize<Dictionary<string, string>>(dataText!);
+                if (data is null)
+                    return new();
             }
-            catch
+            catch (YamlException ye)
             {
-                Debug.WriteLine("Failed parsing responses file.");
+                Debug.WriteLine($"YAML parsing error: {ye.Message}");
+                return new();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Unexpected error reading YAML: {ex.Message}");
                 return new();
             }
 
             var list = new List<TranslationPair>();
             foreach (var entry in data)
             {
-                list.Add(new(
+                list.Add(new TranslationPair(
                     entry.Key,
                     entry.Value
                 ));

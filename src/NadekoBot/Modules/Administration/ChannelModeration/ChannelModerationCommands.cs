@@ -1,12 +1,6 @@
 #nullable disable
-using NadekoBot.Common.Attributes;
 using NadekoBot.Common.TypeReaders.Models;
-using NadekoBot.Extensions;
 using NadekoBot.Modules.Administration.Services;
-using System;
-using System.Threading.Tasks;
-using Discord;
-using Discord.WebSocket;
 
 namespace NadekoBot.Modules.Administration;
 

@@ -1,17 +1,9 @@
-using NadekoBot.Common.Attributes;
-using NadekoBot.Common.TypeReaders;
-using NadekoBot.Extensions;
-using NadekoBot.Modules.Searches.Common;
 using NadekoBot.Modules.Searches.Services;
 using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.Drawing.Processing;
 using SixLabors.ImageSharp.PixelFormats;
 using SixLabors.ImageSharp.Processing;
-using System;
 using System.Diagnostics.CodeAnalysis;
-using System.Linq;
-using System.Threading.Tasks;
-using Color = SixLabors.ImageSharp.Color;
 
 namespace NadekoBot.Modules.Searches;
 

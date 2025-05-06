@@ -3,7 +3,6 @@ using NadekoBot.Modules.Gambling.Common;
 using NadekoBot.Modules.Gambling.Common.Waifu;
 using NadekoBot.Modules.Gambling.Services;
 using NadekoBot.Db.Models;
-using System.Globalization;
 
 namespace NadekoBot.Modules.Gambling;
 

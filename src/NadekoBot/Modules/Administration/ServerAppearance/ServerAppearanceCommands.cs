@@ -1,16 +1,10 @@
 #nullable disable
-using NadekoBot.Common.Attributes;
-using NadekoBot.Modules.Administration.Services;
-using System.Threading.Tasks;
-using Discord;
 using NadekoBot.Modules.Administration._common.results;
-using System;
-using Nadeko.Common;
 
 namespace NadekoBot.Modules.Administration.ServerAppearance;
 
 [Group]
-public partial class ServerAppearanceCommands(AdministrationService service) : NadekoModule<AdministrationService>
+public partial class ServerAppearanceCommands : NadekoModule<AdministrationService>
 {
     [Cmd]
     [RequireContext(ContextType.Guild)]

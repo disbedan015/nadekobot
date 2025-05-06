@@ -1,13 +1,7 @@
-using NadekoBot.Common.Attributes;
-using NadekoBot.Common.TypeReaders;
 using NadekoBot.Modules.Searches.Common;
 using NadekoBot.Modules.Searches.Services;
 using Newtonsoft.Json;
-using System;
 using System.Diagnostics.CodeAnalysis;
-using System.Linq;
-using System.Net.Http;
-using System.Threading.Tasks;
 
 namespace NadekoBot.Modules.Searches;
 

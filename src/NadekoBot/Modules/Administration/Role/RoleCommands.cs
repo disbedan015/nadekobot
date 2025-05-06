@@ -1,8 +1,6 @@
 ﻿#nullable disable
-using Google.Protobuf.WellKnownTypes;
 using NadekoBot.Common.TypeReaders.Models;
 using SixLabors.ImageSharp.PixelFormats;
-using Color = SixLabors.ImageSharp.Color;
 
 namespace NadekoBot.Modules.Administration;
 

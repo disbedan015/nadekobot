@@ -1,9 +1,5 @@
-using NadekoBot.Common.Attributes;
-using NadekoBot.Common.TypeReaders;
-using NadekoBot.Modules.Searches.Common;
 using NadekoBot.Modules.Searches.Services;
 using System.Diagnostics.CodeAnalysis;
-using System.Threading.Tasks;
 
 namespace NadekoBot.Modules.Searches;
 

@@ -1,7 +1,4 @@
-using Discord.WebSocket;
-using NadekoBot.Common.Attributes;
 using NadekoBot.Modules.Searches.Services;
-using System.Threading.Tasks;
 
 namespace NadekoBot.Modules.Searches;
 

@@ -1,12 +1,10 @@
 ﻿using LinqToDB;
 using LinqToDB.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore;
 using NadekoBot.Common.ModuleBehaviors;
 using NadekoBot.Db.Models;
 using NadekoBot.Modules.Xp.Services;
 using OneOf;
 using OneOf.Types;
-using System.ComponentModel.DataAnnotations;
 using System.Threading.Channels;
 
 namespace NadekoBot.Modules.Administration.Services;
@@ -231,7 +229,7 @@ public sealed class SarAssignerService : INService, IReadyExecutor
     private readonly DbService _db;
 
     private readonly Channel<SarAssignerDataItem> _channel =
-        Channel.CreateBounded<SarAssignerDataItem>(100);
+        _Channel.CreateBounded<SarAssignerDataItem>(100);
 
 
     public SarAssignerService(XpService xp, DbService db)

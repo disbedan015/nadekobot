@@ -1,11 +1,4 @@
 #nullable disable
-using NadekoBot.Common.Attributes;
-using System;
-using System.Linq;
-using System.Threading.Tasks;
-using Discord;
-using Discord.WebSocket;
-
 namespace NadekoBot.Modules.Administration.Threads;
 
 [Group]

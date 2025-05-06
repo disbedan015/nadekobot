@@ -1,11 +1,5 @@
-using Discord;
-using Discord.Commands;
-using NadekoBot.Common.Attributes;
-using NadekoBot.Common.TypeReaders;
-using NadekoBot.Extensions;
 using NadekoBot.Modules.Administration.Services;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace NadekoBot.Modules.Utility.LineUp;
 
