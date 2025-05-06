@@ -1,0 +1,11 @@
+city_not_found: City not found.
+condition: Condition
+humidity: Humidity
+latlong: Lat/Long
+location: Location
+min_max: Min/Max
+specify_search_params: Please specify search parameters.
+sunrise: Sunrise
+sunset: Sunset
+temperature: Temperature
+wind_speed: Wind speed

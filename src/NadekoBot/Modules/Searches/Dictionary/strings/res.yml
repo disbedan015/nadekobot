@@ -1,0 +1,10 @@
+_class: Class
+api_key_missing: Api key missing.
+definition: Definition
+error_occured: Error occurred.
+example: Example
+invalid_input: Invalid input.
+not_found: Not found.
+specify_search_params: Please specify search parameters.
+ud_error: Failed finding definition for that term.
+word: Word

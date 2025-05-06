@@ -1,8 +1,0 @@
-{
-  "empty_page": "This page is empty.",
-  "blacklisted_users": "Blacklisted Users",
-  "blacklisted_channels": "Blacklisted Channels",
-  "blacklisted_servers": "Blacklisted Servers",
-  "blacklisted": "Blacklisted {0} with ID {1}",
-  "unblacklisted": "Unblacklisted {0} with ID {1}"
-}

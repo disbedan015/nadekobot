@@ -1,0 +1,50 @@
+changes_of_heart: Changes of heart
+claimed_by: Claimed by
+divorces: Divorces
+empty_page: This page is empty.
+fans: Fans ({0})
+gifts: Gifts
+likes: Likes
+nobody: Nobody
+not_enough: You don't have enough {0}
+price: Price
+waifu: Waifu
+waifu_affinity_already: >-
+  your affinity is already set to that waifu or you're trying to remove your
+  affinity while not having one.
+waifu_affinity_changed: |-
+  {0} changed their affinity from {1} to {2}.
+
+  *This is morally questionable.*🤔
+waifu_affinity_cooldown: >-
+  You must wait {0} hours and {1} minutes in order to change your affinity
+  again.
+waifu_affinity_reset: Your affinity is reset. You no longer have a person you like.
+waifu_affinity_set: '{0} wants to be {1}''s waifu. Aww <3'
+waifu_claimed: '{0} claimed {1} as their waifu for {2}!'
+waifu_divorced_like: |-
+  You have divorced a waifu who likes you. You heartless monster.
+  {0} received {1} as a compensation.
+waifu_divorced_notlike: You have divorced a waifu who doesn't like you. You received {0} back.
+waifu_egomaniac: You can't set affinity to yourself, you egomaniac.
+waifu_fulfilled: |-
+  🎉 Their love is fulfilled! 🎉
+  {0}'s new value is {1}!
+waifu_gift: Gifted {0} to {1}
+waifu_gift_shop: Waifu gift shop
+waifu_isnt_cheap: >-
+  No waifu is that cheap. You must pay at least {0} to get a waifu, even if
+  their actual value is lower.
+waifu_not_enough: You must pay {0} or more to claim that waifu!
+waifu_not_yours: That waifu is not yours.
+waifu_not_yourself: You can't claim yourself.
+waifu_reset: Your waifu stats have been reset.
+waifu_reset_confirm: This will reset your waifu stats
+waifu_reset_fail: Failed resetting waifu stats. Make sure you have enough currency.
+waifu_reset_price: 'Price: {0}'
+waifu_transfer_fail: >-
+  You're either not the owner of that waifu, or you can't afford it.
+  Alternatively your input is invalid.
+waifu_transfer_success: Claim on {0} has been transfered from {1} to {2}
+waifus_none: No waifus have been claimed yet.
+waifus_top_waifus: Top Waifus

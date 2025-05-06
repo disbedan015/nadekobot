@@ -1,0 +1,4 @@
+hierarchy: >-
+  You can't use this command on users with a role higher or equal than yours (or
+  mine) in the role hierarchy.
+sql_confirm_exec: Confirm execution of the following SQL command
