@@ -28,5 +28,8 @@
   "aum_enable": "Enabled usage of ALL MODULES for user {0}.",
   "aum_disable": "Disabled usage of ALL MODULES for user {0}.",
   "asm_enable": "Enabled usage of ALL MODULES on this server.",
-  "asm_disable": "Disabled usage of ALL MODULES on this server."
+  "asm_disable": "Disabled usage of ALL MODULES on this server.",
+  "perm_prevent": "Permission number #{0} {1} is preventing this action.",
+  "perms_reset": "Permissions for this server are reset.",
+  "global_perms_reset": "Global permissions have been reset."
 }

@@ -18,5 +18,6 @@
   "option_disabled": "{0} option is now disabled for the expression with id {1}.",
   "exprs_cleared": "All {0} expressions on this server have been removed.",
   "expr_import_no_input": "Invalid input. No valid file upload or input text found.",
-  "expr_import_invalid_data": "Unable to parse the file. Make sure it's a valid .yml file"
+  "expr_import_invalid_data": "Unable to parse the file. Make sure it's a valid .yml file",
+  "perm_prevent": "Permission number #{0} {1} is preventing this action."
 }

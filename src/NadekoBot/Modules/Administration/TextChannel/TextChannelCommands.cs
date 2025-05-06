@@ -1,14 +1,7 @@
-#nullable disable
-using NadekoBot.Common.Attributes;
-using NadekoBot.Extensions;
-using NadekoBot.Modules.Administration.Services;
-using System.Threading.Tasks;
-using Discord;
-
 namespace NadekoBot.Modules.Administration.TextChannel;
 
 [Group]
-public partial class TextChannelCommands(AdministrationService service) : NadekoModule<AdministrationService>
+public partial class TextChannelCommands : NadekoModule<AdministrationService>
 {
     [Cmd]
     [RequireContext(ContextType.Guild)]
@@ -37,7 +30,7 @@ public partial class TextChannelCommands(AdministrationService service) : Nadeko
     [RequireContext(ContextType.Guild)]
     [UserPerm(GuildPerm.ManageChannels)]
     [BotPerm(GuildPerm.ManageChannels)]
-    public async Task SetTopic([Leftover] string topic = null)
+    public async Task SetTopic([Leftover] string? topic = null)
     {
         var channel = (ITextChannel)ctx.Channel;
         topic ??= "";

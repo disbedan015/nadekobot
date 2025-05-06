@@ -44,5 +44,6 @@
   "verbose_errors_enabled": "Incorrectly used commands will now show errors.",
   "verbose_errors_disabled": "Incorrectly used commands will no longer show errors.",
   "afk_set": "AFK message set. Type a message in any channel to clear.",
-  "sniped_by": "Sniped by {0}"
+  "sniped_by": "Sniped by {0}",
+  "user_afk": "User {0} is AFK."
 }

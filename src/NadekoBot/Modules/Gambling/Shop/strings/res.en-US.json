@@ -22,7 +22,7 @@
   "shop_list_item_not_unique": "That item is already added.",
   "shop_list_item_added": "Item successfully added.",
   "shop_item_rm": "Shop item removed",
-  "shop_item_requires_role": "Requires role: {0}",
+  "shop_item_requires_role": "Requires {0} role to purchase",
   "shop_role": "You will get {0} role.",
   "type": "Type",
   "random_unique_item": "Random unique item.",

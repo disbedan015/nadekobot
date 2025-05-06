@@ -5,7 +5,7 @@
   "atl_removed": "your auto-translate language has been removed.",
   "atl_not_enabled": "Automatic translation is not enabled on this channel or you've provided an invalid language.",
   "invalid_lang": "Invalid source or target language.",
-  "atl_set": "Your auto-translate language has been set to {0}\u003e{1}",
+  "atl_set": "Your auto-translate language has been set to {0}>{1}",
   "supported_languages": "Supported Languages",
   "trfl_enabled": "Flag translation enabled on this channel. Reacting to a message with a flag will translate it to that language.",
   "trfl_disabled": "Flag translation disabled."

@@ -35,5 +35,7 @@
   "set_activity": "New activity set!",
   "set_stream": "New stream set!",
   "invalid_format": "Invalid input format.",
-  "bot_strings_reloaded": "Bot strings have been reloaded."
+  "bot_strings_reloaded": "Bot strings have been reloaded.",
+  "dm_from": "DM from",
+  "attachments": "Attachments"
 }

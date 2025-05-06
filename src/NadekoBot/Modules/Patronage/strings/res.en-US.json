@@ -1,0 +1,9 @@
+{
+  "patron_msg_sent": "Done sending messages to patrons at and above tier {1}. {1} successfully sent and {2} failed.",
+  "patron_not_enabled": "Patron system is disabled.",
+  "patron_info": "Patron Info",
+  "tier": "Tier",
+  "pledge": "Pledge",
+  "expires": "Expires",
+  "cant_dm": "I can't dm you. Make sure your DMs are open. Go to **options (cog button) -> Privacy & Safety -> Allow direct messages from server members**"
+}

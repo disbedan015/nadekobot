@@ -46,5 +46,7 @@
   "id": "Id",
   "playlist_id_not_found": "Playlist with that ID doesn't exist.",
   "attempting_to_queue": "Attempting to queue {0} tracks...",
-  "playlist_queue_complete": "Playlist queue complete."
+  "playlist_queue_complete": "Playlist queue complete.",
+  "song_skips_after": "",
+  "fairplay": ""
 }

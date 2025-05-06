@@ -16,5 +16,8 @@
   "stream_not_following_any": "You're not following any streams.",
   "stream_message_set_all": "All {0} followed streams now have the specified announcement message.",
   "no_channel_found": "No channel found.",
-  "streamer_offline": "Streamer {0} is offline."
+  "streamer_offline": "Streamer {0} is offline.",
+  "status": "Status",
+  "viewers": "Viewers",
+  "streaming": "Streaming"
 }
