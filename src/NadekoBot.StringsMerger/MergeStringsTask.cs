@@ -8,11 +8,20 @@ using YamlDotNet.Serialization;
 using YamlDotNet.Serialization.NamingConventions;
 using YamlDotNet.Core;
 
-public class MergeResponseStringsTask : Task
+public class MergeStringsTask : Task
 {
+    // all input JSON paths
     [Required]
-    public ITaskItem[] InputFiles { get; set; }
+    public ITaskItem[] InputResponses { get; set; }
 
+    [Required]
+    public ITaskItem[] InputCommands { get; set; }
+
+    [Required]
+    public ITaskItem[] InputNames { get; set; }
+
+
+    // where to write the merged file
     [Required]
     public string OutputDir { get; set; }
 
@@ -37,7 +46,7 @@ public class MergeResponseStringsTask : Task
             var mergedByLang = new Dictionary<string, Dictionary<string, string>>(StringComparer.OrdinalIgnoreCase);
             var processedFileCount = 0;
 
-            foreach (var item in InputFiles)
+            foreach (var item in InputResponses)
             {
                 var filePath = item.ItemSpec;
                 var fileName = Path.GetFileName(filePath);
@@ -45,7 +54,7 @@ public class MergeResponseStringsTask : Task
 
                 if (!match.Success)
                 {
-                    Log.LogMessage(MessageImportance.Low, 
+                    Log.LogMessage(MessageImportance.Low,
                         $"Skipping file '{fileName}' as it doesn't match res.<lang>.yml pattern.");
                     continue;
                 }
@@ -96,13 +105,14 @@ public class MergeResponseStringsTask : Task
             {
                 var lang = kvp.Key;
                 var data = kvp.Value;
-                var outputPath = Path.Combine(outResDir, string.IsNullOrWhiteSpace(lang) ? "res.yml" : $"res.{lang}.yml");
+                var outputPath = Path.Combine(outResDir,
+                    string.IsNullOrWhiteSpace(lang) ? "responses/responses.yml" : $"responses/responses.{lang}.yml");
 
                 try
                 {
                     var yaml = serializer.Serialize(data);
                     File.WriteAllText(outputPath, yaml);
-                    Log.LogMessage(MessageImportance.High, 
+                    Log.LogMessage(MessageImportance.High,
                         $"Merged {data.Count} entries for '{lang}' → {outputPath}");
                 }
                 catch (Exception ex)
@@ -112,7 +122,7 @@ public class MergeResponseStringsTask : Task
                 }
             }
 
-            Log.LogMessage(MessageImportance.High, 
+            Log.LogMessage(MessageImportance.High,
                 $"Successfully processed {processedFileCount} files into {mergedByLang.Count} language YAMLs.");
             return true;
         }

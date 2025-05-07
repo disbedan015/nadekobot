@@ -229,7 +229,7 @@ public sealed class SarAssignerService : INService, IReadyExecutor
     private readonly DbService _db;
 
     private readonly Channel<SarAssignerDataItem> _channel =
-        _Channel.CreateBounded<SarAssignerDataItem>(100);
+        Channel.CreateBounded<SarAssignerDataItem>(100);
 
 
     public SarAssignerService(XpService xp, DbService db)

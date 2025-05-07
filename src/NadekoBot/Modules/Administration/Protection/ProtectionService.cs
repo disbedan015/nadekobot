@@ -29,7 +29,7 @@ public class ProtectionService : IReadyExecutor, INService
     private readonly ShardData _shardData;
 
     private readonly Channel<PunishQueueItem> _punishUserQueue =
-        _Channel.CreateUnbounded<PunishQueueItem>(new()
+        Channel.CreateUnbounded<PunishQueueItem>(new()
         {
             SingleReader = true,
             SingleWriter = false

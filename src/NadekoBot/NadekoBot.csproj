@@ -90,7 +90,7 @@
 
         <!-- sqlselectcsv and stock -->
         <PackageReference Include="CsvHelper" Version="33.0.1" />
-
+        
     </ItemGroup>
 
     <ItemGroup>
@@ -98,6 +98,7 @@
         <ProjectReference Include="..\Nadeko.Medusa\Nadeko.Medusa.csproj" />
         <ProjectReference Include="..\NadekoBot.Voice\NadekoBot.Voice.csproj" />
         <ProjectReference Include="..\NadekoBot.Generators\NadekoBot.Generators.csproj" OutputItemType="Analyzer" />
+        <ProjectReference Include="..\NadekoBot.StringsMerger" />
     </ItemGroup>
 
     <ItemGroup>
@@ -140,31 +141,21 @@
     </PropertyGroup>
 
     <UsingTask
-        TaskName="MergeResponseStringsTask"
+        TaskName="MergeStringsTask"
         AssemblyFile="../NadekoBot.StringsMerger/bin/Debug/netstandard2.0/NadekoBot.StringsMerger.dll" />
 
     <ItemGroup>
-        <JsonToMerge Include="**/strings/res*.yml" />
-<!--        <CmdsYmlToMerge Include="**\cmds.*.yml" />-->
-<!--        <NamesToMerge Include="**\names.yml" />-->
+        <ResToMerge Include="**/strings/res*.yml" />
+        <CmdsYmlToMerge Include="**/strings/cmds*.yml" />
+        <NamesToMerge Include="**/strings/names.yml" />
     </ItemGroup>
 
-    <Target Name="MergeResponseStrings" BeforeTargets="BeforeBuild">
-        <MergeResponseStringsTask
-            InputFiles="@(JsonToMerge)"
+    <Target Name="MergeStringsTask" BeforeTargets="BeforeBuild">
+        <MergeStringsTask
+            InputResponses="@(ResToMerge)"
+            InputCommands="@(CmdsToMerge)"
+            InputNames="@(NamesToMerge)"
             OutputDir="$(ProjectDir)strings\"
         />
     </Target>
-    
-    <!-- <Target Name="MergeNames" BeforeTargets="BeforeBuild">
-        <MergeNamesTask
-            InputFiles="@(NamesToMerge)"
-            OutputDir="$(ProjectDir)strings\" />
-    </Target>
-    
-    <Target Name="MergeCommandStrings" BeforeTargets="BeforeBuild">
-        <MergeCommandStringsTask
-            InputFiles="@(CmdsYmlToMerge)"
-            OutputDir="$(ProjectDir)strings\" />
-    </Target> -->
 </Project>

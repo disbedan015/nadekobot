@@ -13,7 +13,7 @@ public sealed class HoneyPotService : IHoneyPotService, IReadyExecutor, IExecNoC
 
     private ConcurrentHashSet<ulong> _channels = new();
 
-    private Channel<SocketGuildUser> _punishments = _Channel.CreateBounded<SocketGuildUser>(
+    private Channel<SocketGuildUser> _punishments = Channel.CreateBounded<SocketGuildUser>(
         new BoundedChannelOptions(100)
         {
             FullMode = BoundedChannelFullMode.DropOldest,
