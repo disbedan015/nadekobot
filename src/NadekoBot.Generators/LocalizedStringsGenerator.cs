@@ -6,6 +6,9 @@ using Microsoft.CodeAnalysis;
 using YamlDotNet.Core;
 using YamlDotNet.Serialization;
 
+// using YamlDotNet.Core;
+// using YamlDotNet.Serialization;
+
 namespace NadekoBot.Generators
 {
     internal readonly struct TranslationPair
@@ -45,9 +48,12 @@ namespace NadekoBot.Generators
         public void Execute(GeneratorExecutionContext context)
         {
             var mergedDict = new Dictionary<string, string>();
-
+            
             foreach (var additionalFile in context.AdditionalFiles)
             {
+                if (!additionalFile.Path.EndsWith(".yml"))
+                    continue;
+                
                 var fields = GetFields(additionalFile.GetText()?.ToString());
                 foreach (var field in fields)
                 {
@@ -115,8 +121,6 @@ namespace NadekoBot.Generators
 
         private List<TranslationPair> GetFields(string? dataText)
         {
-            return [];
-            
             if (string.IsNullOrWhiteSpace(dataText))
                 return new();
 

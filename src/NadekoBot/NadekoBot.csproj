@@ -94,11 +94,11 @@
     </ItemGroup>
 
     <ItemGroup>
+        <ProjectReference Include="..\NadekoBot.StringsMerger\NadekoBot.StringsMerger.csproj" />
         <ProjectReference Include="..\NadekoBot.GrpcApiBase\NadekoBot.GrpcApiBase.csproj" />
         <ProjectReference Include="..\Nadeko.Medusa\Nadeko.Medusa.csproj" />
         <ProjectReference Include="..\NadekoBot.Voice\NadekoBot.Voice.csproj" />
         <ProjectReference Include="..\NadekoBot.Generators\NadekoBot.Generators.csproj" OutputItemType="Analyzer" />
-        <ProjectReference Include="..\NadekoBot.StringsMerger" />
     </ItemGroup>
 
     <ItemGroup>
@@ -142,7 +142,7 @@
 
     <UsingTask
         TaskName="MergeStringsTask"
-        AssemblyFile="../NadekoBot.StringsMerger/bin/Debug/netstandard2.0/NadekoBot.StringsMerger.dll" />
+        AssemblyFile="$(TargetDir)NadekoBot.StringsMerger.dll" />
 
     <ItemGroup>
         <ResToMerge Include="**/strings/res*.yml" />
@@ -150,7 +150,7 @@
         <NamesToMerge Include="**/strings/names.yml" />
     </ItemGroup>
 
-    <Target Name="MergeStringsTask" BeforeTargets="BeforeBuild">
+    <Target Name="MergeStringsTask" BeforeTargets="AfterBuild">
         <MergeStringsTask
             InputResponses="@(ResToMerge)"
             InputCommands="@(CmdsToMerge)"

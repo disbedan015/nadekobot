@@ -12,18 +12,18 @@ public class MergeStringsTask : Task
 {
     // all input JSON paths
     [Required]
-    public ITaskItem[] InputResponses { get; set; }
+    public ITaskItem[] InputResponses { get; set; } = [];
 
     [Required]
-    public ITaskItem[] InputCommands { get; set; }
+    public ITaskItem[] InputCommands { get; set; } = [];
 
     [Required]
-    public ITaskItem[] InputNames { get; set; }
+    public ITaskItem[] InputNames { get; set; } = [];
 
 
     // where to write the merged file
     [Required]
-    public string OutputDir { get; set; }
+    public string OutputDir { get; set; } = string.Empty;
 
     // Now matching .yml instead of .json
     private readonly Regex _yamlRegex = new(@"res(?:\.(?<lang>.+))?\.yml$", RegexOptions.IgnoreCase);
@@ -98,7 +98,7 @@ public class MergeStringsTask : Task
             }
 
             // Write merged YAML out
-            var outResDir = Path.Combine(OutputDir, "res");
+            var outResDir = Path.Combine(OutputDir, "responses");
             Directory.CreateDirectory(outResDir);
 
             foreach (var kvp in mergedByLang)
@@ -106,7 +106,7 @@ public class MergeStringsTask : Task
                 var lang = kvp.Key;
                 var data = kvp.Value;
                 var outputPath = Path.Combine(outResDir,
-                    string.IsNullOrWhiteSpace(lang) ? "responses/responses.yml" : $"responses/responses.{lang}.yml");
+                    string.IsNullOrWhiteSpace(lang) ? "responses.yml" : $"responses.{lang}.yml");
 
                 try
                 {
