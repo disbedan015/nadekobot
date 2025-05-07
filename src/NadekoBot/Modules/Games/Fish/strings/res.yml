@@ -1,4 +1,3 @@
-desc: Description
 fish_buy_success: Item purchased successfully!
 fish_cant_uneq_potion: You can't unequip a potion.
 fish_catches: '{0} catches total'
@@ -20,4 +19,3 @@ fish_waiting: Fishing...
 fish_weather: Weather
 fish_weather_duration: Each weather period lasts for {0} hours.
 fish_weather_forecast: Forecast
-not_enough: You don't have enough {0}

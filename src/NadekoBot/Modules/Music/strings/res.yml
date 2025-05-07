@@ -10,8 +10,6 @@ current_music_quality: 'Currently set music quality is: {0}'
 dir_queue_complete: Directory queue complete.
 fairplay: ''
 from_position: From position
-id: Id
-invalid_input: Invalid input.
 music_autoplay_off: Music autoplay disabled.
 music_autoplay_on: >-
   Music autoplay enabled. I will automatically queue related tracks after each
@@ -20,12 +18,9 @@ music_fairplay: Music queue has been fairly reordered.
 music_quality_set: >-
   Music quality has been set to {0}. You will have to destroy and restart music
   player for the change to take effect.
-must_be_in_voice: You need to be in a voice channel on this server.
-name: Name
 no_last_queued_found: No last queued track found.
 no_lyrics_found: No lyrics found.
 no_player: No active music player.
-no_search_results: No search results.
 not_with_bot_in_voice: You are not in the same voice channel as the bot.
 now_playing: Now playing
 player_queue: Player queue - Page {0}/{1}

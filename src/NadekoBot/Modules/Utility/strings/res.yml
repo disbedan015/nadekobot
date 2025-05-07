@@ -13,10 +13,7 @@ emoji_add_error: >-
   inadequate.
 emoji_added: 'Added a new emoji: {0}'
 emoji_not_removed: 'The following emojis were not removed: {0}'
-error_occured: Error occurred.
 inrole_list: List of users in {0} role ({1})
-insuf_perms_i: I have insufficient permissions.
-insuf_perms_u: You have insufficient permissions.
 invalid_emoji_link: Specified link is either not an image or exceeds 256KB.
 listservers: |-
   ID: {0}
@@ -25,12 +22,9 @@ listservers: |-
 listservers_none: No servers found on that page.
 memory: Memory
 messages: Messages
-msg_not_found: Message not found.
 no_roles_on_page: No roles on this page.
 no_topic_set: No topic set.
-no_user_on_this_page: No users on this page.
 nobody_playing_game: Nobody is playing that game.
-not_found: Not found.
 owner_ids: Owner IDs
 presence: Presence
 presence_txt: |-

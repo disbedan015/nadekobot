@@ -1,4 +1,3 @@
-error_occured: Error occurred.
 prune_already_running: A prune is already running on this server.
 prune_cancelled: Pruning was cancelled.
 prune_not_found: No active prune was found on this server.

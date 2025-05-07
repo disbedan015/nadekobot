@@ -11,4 +11,3 @@ lineup_next_user: 'Next up: {0}'
 lineup_not_in: You are not in the lineup.
 lineup_remove_fail: '{0} is not in the lineup.'
 lineup_removed: '{0} has been removed from the lineup.'
-user_not_found: User Not Found

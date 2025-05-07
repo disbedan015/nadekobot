@@ -13,7 +13,6 @@ cant_apply_punishment: >-
   that my role is above any other role in the server settings.
 duration: Duration
 invalid: Invalid / Can't be found ({0})
-invalid_input: Invalid input.
 kickdm: |-
   You have been kicked from {0} server.
   Reason: {1}
@@ -37,7 +36,6 @@ timeoutdm: |-
   Reason: {1}
 unable_to_dm_user: DMing user failed.
 unbanned_user: User {0} has been unbanned.
-user_not_found: User not found.
 user_warned: User {0} has been warned.
 user_warned_and_punished: User {0} has been warned and {1} punishment has been applied.
 username: Username

@@ -1,5 +1,4 @@
 acrm_fail: Auto command not found on the specified index.
-attachments: Attachments
 autocmd_add: The command {0} will execute every {1}s in this channel.
 autocmdlist_none: No auto commands on this page.
 bot_name: Bot's name changed to {0}
@@ -7,11 +6,9 @@ bot_status: Bot status changed to {0}
 bot_strings_reloaded: Bot strings have been reloaded.
 cache_users_done: '{0} users were added and {1} users were updated.'
 cache_users_pending: Updating users, please wait...
-channel: Channel
 command_text: Command Text
 deleted_x_servers: Deleted {0} servers.
 dm_from: DM from
-error_occured: Error occurred.
 fwall_start: I will forward DMs to all owners.
 fwall_stop: I will forward DMs only to the first owner.
 fwch_start: Any message sent to bot's DMs will be forwarded to this channel.
@@ -22,7 +19,6 @@ interval: Interval
 invalid_format: Invalid input format.
 no_shard_id: No shard with that ID found.
 no_shards_on_page: No shards on this page.
-page: page {0}
 restart_fail: You must setup RestartCommand in your creds.yml
 restarting: Restarting.
 scadd: New startup command added.

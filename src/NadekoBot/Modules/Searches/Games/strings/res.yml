@@ -1,7 +1,4 @@
 card_not_found: Couldn't find that card.
 cost: Cost
 mashape_api_missing: Bot owner didn't specify RapidApi api key. You can't use this functionality.
-not_found: Not found.
-specify_search_params: Please specify search parameters.
 store_url: Store url
-types: Types

@@ -12,7 +12,6 @@ byedel_on: Bye messages will be deleted after {0} seconds.
 byemsg_cur: 'Current bye message: {0}'
 byemsg_enable: Enable bye messages by typing {0}
 byemsg_new: New bye message set.
-error: Error
 greet_off: Greet announcements disabled.
 greet_on: Greet announcements enabled on this channel.
 greetdel_off: Automatic deletion of greet messages has been disabled.

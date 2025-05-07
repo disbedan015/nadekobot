@@ -1,7 +1,6 @@
 adsarm_disable: Bot will no longer delete `{0}iam` and `{0}iamn` responses.
 adsarm_enable: Automatic deletion of `{0}iam` and `{0}iamn` responses has been enabled.
 choose_one: Choose one
-error_occured: Error occurred.
 group_name_added: 'Group #{0} now has a name: {1}'
 group_name_removed: 'Group #{0} no longer has a name.'
 requires_role: 'Requires role: {0}'

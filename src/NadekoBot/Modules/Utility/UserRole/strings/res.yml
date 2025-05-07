@@ -1,14 +1,8 @@
-hierarchy: >-
-  You can't use this command on users with a role higher or equal than yours (or
-  mine) in the role hierarchy.
 userrole_assigned: '{0} has been assigned the role {1}.'
 userrole_color_fail: >-
   Failed to set the role color. Make sure you're using a valid hex color code
   (e.g., #FF0000).
 userrole_color_success: The color of {0} has been changed to {1}.
-userrole_icon_fail: Failed to set the role icon.
-userrole_icon_invalid: The role icon cannot be empty.
-userrole_icon_success: The icon for {0} has been saved.
 userrole_list_for_user: '{0}''s User Roles'
 userrole_list_title: User Roles in this server
 userrole_name_fail: Failed to set the role name.

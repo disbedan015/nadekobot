@@ -1,4 +1,3 @@
-channel: Channel
 notify_available: List of available notify events
 notify_cant_set: This event doesn't support origin channel. Please specify a channel.
 notify_desc_addrolerew: Triggers when a user gets a role as a reward for reaching a level (xprew).

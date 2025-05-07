@@ -4,6 +4,4 @@ crypto_not_found: CryptoCurrency with that name was not found.
 did_you_mean: Did you mean {0}?
 market_cap: Market Cap
 market_cap_dominance: Dominance
-not_found: Not found.
-price: Price
 volume_24h: Volume (24h)

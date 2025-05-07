@@ -1,8 +1,5 @@
 item: Item
-name: Name
-not_enough: You don't have enough {0}
 out_of_stock: Out of stock.
-price: Price
 random_unique_item: Random unique item.
 shop: Shop
 shop_buy_error: Error DMing item. You've been refunded.

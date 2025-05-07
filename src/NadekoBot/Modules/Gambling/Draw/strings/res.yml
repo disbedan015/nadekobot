@@ -1,4 +1,3 @@
-bet: Bet
 card: Card
 cards: Cards
 cards_left: '{0} cards left in the deck.'
@@ -6,5 +5,3 @@ deck_reshuffled: Deck reshuffled.
 guess: Guess
 hand_value: Hand value
 no_more_cards: No more cards in the deck.
-not_enough: You don't have enough {0}
-won: Won

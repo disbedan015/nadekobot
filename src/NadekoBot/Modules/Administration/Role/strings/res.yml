@@ -7,9 +7,6 @@ btnrole_removeall_not_found: Button role successfully removed but message wasn't
 btnrole_removed: Button role removed.
 cr: Successfully created role {0}
 dr: Role {0} has been deleted.
-hierarchy: >-
-  You can't use this command on users with a role higher or equal than yours (or
-  mine) in the role hierarchy.
 invalid_message_id: Invalid Message Id.
 invalid_message_link: >-
   The message link must be this Bot's message. The bot can't add buttons to
@@ -35,6 +32,3 @@ sticky_roles_enabled: >-
   Sticky roles enabled. Leaving users' roles will be restored when they rejoin
   the server.
 temp_role_added: User {0} has been given {1} role temporarily. The role expires {2}
-userrole_icon_fail: Failed to set the role icon.
-userrole_icon_invalid: The role icon cannot be empty.
-userrole_icon_success: The icon for {0} has been saved.

@@ -2,16 +2,12 @@ available_commands: Available Commands
 buy: Buy
 cur_reward_added: Users who reach level {0} will receive {1}.
 cur_reward_cleared: Reaching level {0} will no longer reward any {1}.
-desc: Description
 in_use: In use
 level_set: Level of user {0} set to {1} on this server.
 level_up_rewards: Level Up Rewards
 level_x: Level {0}
 modified: Modified server XP of the user {0} by {1}
 no_level_up_rewards: No level up reward on this page.
-not_enough: You don't have enough {0}
-not_found: Not found.
-price: Price
 reset: Xp Reset
 reset_server: XP of all users on the server has been reset.
 reset_server_confirm: Are you sure that you want to reset the XP of all users on the server?

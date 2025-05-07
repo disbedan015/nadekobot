@@ -2,5 +2,4 @@ blacklisted: Blacklisted {0} with ID {1}
 blacklisted_channels: Blacklisted Channels
 blacklisted_servers: Blacklisted Servers
 blacklisted_users: Blacklisted Users
-empty_page: This page is empty.
 unblacklisted: Unblacklisted {0} with ID {1}

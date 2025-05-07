@@ -1,6 +1,4 @@
-color: Color
 invalid_img_size: Image must to be {0}x{1} pixels.
-invalid_input: Invalid input.
 nc_hint: Use `{0}nczoom x y` command to zoom in. Image is {1}x{2} pixels.
 nc_insuff_payment: Invalid payment.
 nc_pixel: Pixel {0}
@@ -9,5 +7,3 @@ nc_pixel_set: Pixel {0} successfully set!
 nc_pixel_set_confirm: Are you sure you want to set pixel {0}? It will cost you {1}
 nc_position: Position
 no_attach_found: No attachment found. Please send the image along with this command.
-not_enough: You don't have enough {0}
-price: Price

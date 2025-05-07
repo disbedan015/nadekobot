@@ -1,5 +1,3 @@
-no_channel_found: No channel found.
-status: Status
 stream_message_reset: Announcement message for {0} stream has been reset.
 stream_message_set: Announcement message when {0} stream goes online has been set.
 stream_message_set_all: All {0} followed streams now have the specified announcement message.

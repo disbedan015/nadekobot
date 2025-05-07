@@ -1,6 +1,1 @@
-api_key_missing: Api key missing.
-error_occured: Error occurred.
-invalid_input: Invalid input.
-not_found: Not found.
-specify_search_params: Please specify search parameters.
 wikia_input_error: Please enter a target wikia, followed by search query.

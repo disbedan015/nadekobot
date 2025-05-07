@@ -1,4 +1,3 @@
-insuf_perms_u: You have insufficient permissions.
 mute_error: I don't have the permission necessary for that most likely.
 mute_perms: >-
   You can't mute a user who has a role higher than your highest role in the role

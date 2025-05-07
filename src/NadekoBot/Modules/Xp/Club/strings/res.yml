@@ -46,9 +46,5 @@ club_user_banned: Banned user {0} from {1} club.
 club_user_kick: User {0} kicked from {1} club.
 club_user_not_in_club: '{0} is not in a club.'
 club_user_unbanned: Unbanned user {0} in {1} club.
-desc: Description
 level_req: ''
-level_x: Level {0}
-members: Members
-owner: Owner
 rank: Rank

@@ -1,4 +1,3 @@
-must_be_in_voice: You need to be in a voice channel on this server.
 no_vcroles: There are no voice channel roles.
 vc_role_list: Voice channel roles
 vcrole_added: Users who join {0} voice channel will get {1} role.
