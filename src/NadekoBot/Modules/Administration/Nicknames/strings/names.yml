@@ -1,11 +1,2 @@
 setnick:
   - setnick
-  - sn
-setusernick:
-  - setusernick
-  - sunick
-  - sun
-removenick:
-  - removenick
-  - rmnick
-  - rmn

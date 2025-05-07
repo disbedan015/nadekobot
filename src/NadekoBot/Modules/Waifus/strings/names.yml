@@ -1,0 +1,27 @@
+affinity:
+  - affinity
+  - waifuaff
+divorce:
+  - divorce
+waifuclaim:
+  - waifuclaim
+  - claim
+  - wc
+waifuclaims:
+  - waifuclaims
+  - claims
+  - wcs
+waifugift:
+  - waifugift
+  - gift
+  - gifts
+waifuinfo:
+  - waifuinfo
+  - waifustats
+waifulb:
+  - waifulb
+  - waifus
+waifureset:
+  - waifureset
+waifutransfer:
+  - waifutransfer

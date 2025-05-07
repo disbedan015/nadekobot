@@ -1,8 +1,7 @@
 threadcreate:
   - threadcreate
-  - thcreate
-  - thc
+  - thcr
 threaddelete:
   - threaddelete
-  - thdelete
-  - thd
+  - thdel
+  - thrm

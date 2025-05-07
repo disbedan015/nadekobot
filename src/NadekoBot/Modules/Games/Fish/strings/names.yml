@@ -1,0 +1,38 @@
+fish:
+  - fish
+  - fi
+fishbuy:
+  - fishbuy
+  - fibuy
+fishinv:
+  - fishinv
+  - finv
+  - fiinv
+fishlb:
+  - fishlb
+  - filb
+fishlist:
+  - fishlist
+  - fili
+  - fishes
+  - fil
+  - fishlist
+fishshop:
+  - fishshop
+  - fishop
+fishspot:
+  - fishspot
+  - fisp
+  - fish?
+fishunequip:
+  - fishunequip
+  - fiuneq
+  - fiunequip
+  - fiunuse
+  - fishunuse
+fishuse:
+  - fishuse
+  - fiuse
+  - fiequip
+  - fieq
+  - fiquip

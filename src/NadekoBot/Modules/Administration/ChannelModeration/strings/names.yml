@@ -1,13 +1,13 @@
+agerestricttoggle:
+  - nsfwtoggle
+  - artoggle
 imageonlychannel:
   - imageonlychannel
-  - imgonly
+  - imageonly
+  - imagesonly
 linkonlychannel:
   - linkonlychannel
-  - lnkonly
+  - linkonly
+  - linkssonly
 slowmode:
   - slowmode
-  - sm
-agerestricttoggle:
-  - agerestricttoggle
-  - nsfwtoggle
-  - nsfw

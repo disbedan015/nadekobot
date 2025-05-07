@@ -1,0 +1,16 @@
+deletecurrency:
+  - deletecurrency
+deletewaifu:
+  - deletewaifu
+deletewaifus:
+  - deletewaifus
+deletexp:
+  - deletexp
+purgeuser:
+  - purgeuser
+sqlexec:
+  - sqlexec
+sqlselect:
+  - sqlselect
+sqlselectcsv:
+  - sqlselectcsv

@@ -1,12 +1,12 @@
-deafen:
-  - deafen
-  - dfn
-undeafen:
-  - undeafen
-  - udfn
-delvoichanl:
-  - delvoichanl
-  - delvc
 creatvoichanl:
   - creatvoichanl
-  - crvc
+  - cvch
+deafen:
+  - deafen
+  - deaf
+delvoichanl:
+  - delvoichanl
+  - dvch
+undeafen:
+  - undeafen
+  - undef

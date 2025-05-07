@@ -1,7 +1,5 @@
-```yaml
-edit:
-  - edit
 delete:
   - delete
   - del
-```
+edit:
+  - edit

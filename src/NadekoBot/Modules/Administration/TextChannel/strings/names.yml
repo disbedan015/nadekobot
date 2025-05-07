@@ -1,12 +1,12 @@
-deltxtchanl:
-  - deltxtchanl
-  - deltc
 creatxtchanl:
   - creatxtchanl
-  - crtc
+  - ctch
+deltxtchanl:
+  - deltxtchanl
+  - dtch
+setchanlname:
+  - setchanlname
+  - schn
 settopic:
   - settopic
   - st
-setchanlname:
-  - setchanlname
-  - scn
