@@ -1,0 +1,23 @@
+cleanupguilddata:
+  desc: |-
+    Deletes data for all servers bot is no longer a member of from the database.
+    This is a highly destructive and irreversible command.
+  ex:
+    - ''
+  params:
+    - {}
+keep:
+  desc: The current serve, won't be deleted from Nadeko's database during the purge.
+  ex:
+    - ''
+  params:
+    - {}
+leaveunkeptservers:
+  desc: Leaves all servers whose owners didn't run .keep
+  ex:
+    - ''
+  params:
+    - shardId:
+        desc: Shard id from which to start leaving unkept servers.
+    - delay:
+        desc: Delay in miliseconds between leaves

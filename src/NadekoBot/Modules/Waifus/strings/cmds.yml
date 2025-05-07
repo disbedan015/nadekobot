@@ -1,0 +1,112 @@
+affinity:
+  desc: >-
+    Sets your affinity towards someone you want to be claimed by. Setting
+    affinity will reduce their `{0}claim` on you by 20%. Provide no parameters
+    to clear your affinity. 30 minutes cooldown.
+  ex:
+    - '@MyHusband'
+    - ''
+  params:
+    - user:
+        desc: The user being targeted for a potential claim.
+divorce:
+  desc: >-
+    Releases your claim on a specific waifu. You will get 50% of that waifu's
+    value back, unless that waifu has an affinity towards you, in which case
+    they will be reimbursed instead. 6 hours cooldown.
+  ex:
+    - '@CheatingSloot'
+  params:
+    - target:
+        desc: The ID or name of the waifu being released from your claim.
+    - target:
+        desc: The user to release the claim on.
+    - targetId:
+        desc: The ID of the waifu to release your claim on.
+waifuclaim:
+  desc: >-
+    Claim a waifu for yourself by spending currency.  You must spend at least
+    10% more than her current value unless she set `{0}affinity` towards you.
+  ex:
+    - 50 @Himesama
+  params:
+    - amount:
+        desc: The cost of claiming the waifu.
+      target:
+        desc: >-
+          The user to whom the claim is being made, allowing the waifu to be
+          claimed from their collection.
+waifuclaims:
+  desc: Shows all of your currently claimed waifus.
+  ex:
+    - ''
+  params:
+    - {}
+waifugift:
+  desc: >-
+    Gift an item to a waifu user.
+
+    The waifu's value will be increased by the percentage of the gift's value.
+
+    You can optionally prefix the gift with a multiplier to gift the item that
+    many times.
+
+    For example, 3xRose will give the waifu 3 roses, 10xBread will give the
+    waifu 10 breads. Do not use plural forms.
+
+    Negative gifts will not show up in waifuinfo. 
+
+    Provide no parameters to see a list of items that you can gift.
+  ex:
+    - ''
+    - Rose @Himesama
+  params:
+    - page:
+        desc: The number of the page to display.
+    - items:
+        desc: The name of an item to be gifted. With an optional multiplier prefix.
+      waifu:
+        desc: The user who is receiving the gift.
+waifuinfo:
+  desc: >-
+    Shows waifu stats for a target person. Defaults to you if no user is
+    provided.
+  ex:
+    - '@MyCrush'
+    - ''
+  params:
+    - target:
+        desc: The user being targeted, whose waifu information will be displayed.
+    - targetId:
+        desc: The ID of the person whose waifu stats are being displayed.
+waifulb:
+  desc: Shows top 9 waifus. You can specify another page to show other waifus.
+  ex:
+    - ''
+    - 3
+  params:
+    - page:
+        desc: The number of the page to display.
+waifureset:
+  desc: Resets your waifu stats, except current waifus.
+  ex:
+    - ''
+  params:
+    - {}
+waifutransfer:
+  desc: >-
+    Transfer the ownership of one of your waifus to another user. You must pay
+    10%  of your waifu's value unless that waifu has affinity towards you, in
+    which case you must pay 60% fee. Transferred waifu's price will be reduced
+    by the fee amount.
+  ex:
+    - '@ExWaifu @NewOwner'
+  params:
+    - newOwner:
+        desc: The user to whom ownership of the waifu is being transferred.
+      waifuId:
+        desc: The ID of the waifu being transferred to a new owner.
+    - newOwner:
+        desc: The user to whom ownership of the waifu is being transferred.
+      waifu:
+        desc: The user to whom the ownership of the waifu is being transferred.
