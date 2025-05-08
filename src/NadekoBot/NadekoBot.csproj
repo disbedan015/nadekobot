@@ -102,15 +102,11 @@
     </ItemGroup>
 
     <ItemGroup>
-        <AdditionalFiles Include="**\strings\*.yml" />
+        <AdditionalFiles Include="Modules\**\strings\res*.yml" />
     </ItemGroup>
 
     <ItemGroup>
         <None Update="data/**/*">
-            <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </None>
-        <None Update="strings/**">
             <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
             <CopyToOutputDirectory>Always</CopyToOutputDirectory>
         </None>
@@ -145,17 +141,13 @@
         AssemblyFile="$(TargetDir)NadekoBot.StringsMerger.dll" />
 
     <ItemGroup>
-        <ResToMerge Include="**/strings/res*.yml" />
-        <CmdsYmlToMerge Include="**/strings/cmds*.yml" />
-        <NamesToMerge Include="**/strings/names.yml" />
+        <ResToMerge Include="Modules/**/strings/*.yml" />
     </ItemGroup>
 
     <Target Name="MergeStringsTask" BeforeTargets="AfterBuild">
         <MergeStringsTask
-            InputResponses="@(ResToMerge)"
-            InputCommands="@(CmdsToMerge)"
-            InputNames="@(NamesToMerge)"
-            OutputDir="$(ProjectDir)strings\"
+            InputYmls="@(ResToMerge)"
+            OutputDir="$(TargetDir)strings\"
         />
     </Target>
 </Project>

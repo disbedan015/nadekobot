@@ -18,7 +18,7 @@ imageonlychannel:
           The amount of time before banning users for sending non-image
           messages.
 linkonlychannel:
-  desc: >-
+  desc: |-
     Toggles whether the channel only allows links.
 
     Users who send more than a few non-link messages will be banned from using

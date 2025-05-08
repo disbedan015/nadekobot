@@ -1,8 +1,0 @@
-```yaml
-autopublish:
-  desc: Toggles automatic publishing of messages posted in the current announcement channel.
-  ex:
-    - ''
-  params: []
-
-```

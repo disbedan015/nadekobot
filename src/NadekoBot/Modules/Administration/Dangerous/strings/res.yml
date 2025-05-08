@@ -1,2 +1,1 @@
 purge_user_confirm: Are you sure that you want to purge {0} from the database?
-sql_confirm_exec: Confirm execution of the following SQL command
