@@ -7,6 +7,12 @@ gencurlist:
   params:
     - page:
         desc: The current page number for pagination.
+gencurrency:
+  desc: Toggles currency generation on this channel. Every posted message will have chance to spawn currency. Chance is specified by the Bot Owner. (default is 2%)
+  ex:
+    - ''
+  params:
+    - { }
 pick:
   desc: >-
     Picks the currency planted in this channel. If the plant has a password, you

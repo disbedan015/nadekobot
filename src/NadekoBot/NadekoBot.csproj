@@ -102,7 +102,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <AdditionalFiles Include="Modules\**\strings\res*.yml" />
+        <AdditionalFiles Include="Modules/**/strings/res*.yml" />
     </ItemGroup>
 
     <ItemGroup>
@@ -117,7 +117,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <Protobuf Include="..\NadekoBot.Coordinator\Protos\coordinator.proto">
+        <Protobuf Include="../NadekoBot.Coordinator/Protos/coordinator.proto">
             <Link>_common\CoordinatorProtos\coordinator.proto</Link>
             <GrpcServices>Client</GrpcServices>
         </Protobuf>
@@ -147,7 +147,7 @@
     <Target Name="MergeStringsTask" BeforeTargets="AfterBuild">
         <MergeStringsTask
             InputYmls="@(ResToMerge)"
-            OutputDir="$(TargetDir)strings\"
+            OutputDir="$(TargetDir)strings"
         />
     </Target>
 </Project>

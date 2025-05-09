@@ -45,8 +45,8 @@ public class MergeStringsTask : Task
         [YamlMember(Alias = "ex")]
         public string[] Ex { get; set; }
 
-        [YamlMember(Alias = "opts")]
-        public Dictionary<string, OptPoco>[] Opts { get; set; }
+        [YamlMember(Alias = "params")]
+        public Dictionary<string, OptPoco>[] Params { get; set; }
 
         public class OptPoco
         {
@@ -124,7 +124,7 @@ public class MergeStringsTask : Task
                 var lang = kvp.Key;
                 var data = kvp.Value;
                 var outputPath = Path.Combine(outResDir,
-                    string.IsNullOrWhiteSpace(lang) ? "cmds.yml" : $"cmds.{lang}.yml");
+                    string.IsNullOrWhiteSpace(lang) ? "cmds.en-US.yml" : $"cmds.{lang}.yml");
 
                 try
                 {
@@ -185,7 +185,7 @@ public class MergeStringsTask : Task
 
         var output = serializer.Serialize(merged);
         Directory.CreateDirectory(OutputDir);
-        File.WriteAllText(Path.Combine(OutputDir, "aliases.yml"), output);
+        File.WriteAllText(Path.Combine(OutputDir, "names.yml"), output);
         return true;
     }
 
@@ -257,7 +257,7 @@ public class MergeStringsTask : Task
                 var lang = kvp.Key;
                 var data = kvp.Value;
                 var outputPath = Path.Combine(outResDir,
-                    string.IsNullOrWhiteSpace(lang) ? "responses.yml" : $"responses.{lang}.yml");
+                    string.IsNullOrWhiteSpace(lang) ? "responses.en-US.yml" : $"responses.{lang}.yml");
 
                 try
                 {

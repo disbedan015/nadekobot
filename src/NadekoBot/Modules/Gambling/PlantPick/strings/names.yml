@@ -1,6 +1,9 @@
 gencurlist:
   - gencurlist
   - gclist
+gencurrency:
+  - gencurrency
+  - gc
 pick:
   - pick
 plant:
