@@ -13,6 +13,8 @@ src/NadekoBot/creds.yml
 src/NadekoBot/data/creds.yml
 src/NadekoBot/Command Errors*.txt
 src/NadekoBot/data/NadekoBot.db*
+src/NadekoBot/strings
+src/NadekoBot.Tests/strings
 
 # Created by https://www.gitignore.io/api/visualstudio,visualstudiocode,windows,linux,macos
 
