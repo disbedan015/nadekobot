@@ -54,7 +54,7 @@ public partial class LineUpCommands(GuildTimezoneService timezones)
             .WithOkColor();
 
         var sb = new StringBuilder();
-        var tz = _tzs.GetTimeZoneOrUtc(ctx.Guild.Id);
+        var tz = timezones.GetTimeZoneOrUtc(ctx.Guild.Id);
         for (var i = 0; i < lineup.Count; i++)
         {
             var user = lineup[i];

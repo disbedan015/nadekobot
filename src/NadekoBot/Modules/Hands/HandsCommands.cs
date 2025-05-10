@@ -18,10 +18,10 @@ public partial class Utility
 
             await Response()
                 .Paginated()
-                .Items(voiceChannel.ConnectedUsers.Where(x => x.RequestToSpeakTimestamp is not null).ToList())
+                .PageItems((page) => Task.FromResult<IReadOnlyCollection<SocketGuildUser>>(voiceChannel.ConnectedUsers.Where(x => x.RequestToSpeakTimestamp is not null).Take(page * 10).ToList().AsReadOnly()))
                 .PageSize(10)
                 .AddFooter(false)
-                .Page((requestedUsers, page) =>
+                .Page((requestedUsers, _) =>
                 {
                     var embed = CreateEmbed()
                         .WithOkColor();
