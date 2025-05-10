@@ -3,18 +3,15 @@ using System.Text;
 
 namespace NadekoBot.Modules.Utility.LineUp;
 
-public partial class LineUpCommands(LineUpService service, GuildTimezoneService timezones)
+public partial class LineUpCommands(GuildTimezoneService timezones)
     : NadekoModule<LineUpService>
 {
-    private readonly GuildTimezoneService _tzs = timezones;
-
-    // User Commands
-
     [Cmd]
     [RequireContext(ContextType.Guild)]
     public async Task LineUp([Remainder] string? reason = null)
     {
-        var (success, position) = await _service.TryJoinLineupAsync(ctx.Guild.Id, ctx.Channel.Id, ctx.User.Id, reason?.TrimTo(200));
+        var (success, position) =
+            await _service.TryJoinLineupAsync(ctx.Guild.Id, ctx.Channel.Id, ctx.User.Id, reason?.TrimTo(200));
 
         if (success)
         {
@@ -23,7 +20,8 @@ public partial class LineUpCommands(LineUpService service, GuildTimezoneService 
         else
         {
             var currentPosition = await _service.GetPositionAsync(ctx.Guild.Id, ctx.Channel.Id, ctx.User.Id);
-            await Response().Error(strs.lineup_already_in(Format.Bold(ctx.User.ToString()), currentPosition ?? 0)).SendAsync();
+            await Response().Error(strs.lineup_already_in(Format.Bold(ctx.User.ToString()), currentPosition ?? 0))
+                .SendAsync();
         }
     }
 
@@ -63,7 +61,8 @@ public partial class LineUpCommands(LineUpService service, GuildTimezoneService 
             var discordUser = await ctx.Guild.GetUserAsync(user.UserId);
             var userName = discordUser?.ToString() ?? user.UserId.ToString();
             var addedTime = TimeZoneInfo.ConvertTime(user.DateAdded, tz);
-            sb.AppendLine($"`{i + 1}.` {Format.Bold(userName)} ({GetText(strs.lineup_added_at(addedTime))}){(string.IsNullOrWhiteSpace(user.Reason) ? string.Empty : $" - {user.Reason}")}");
+            sb.AppendLine(
+                $"`{i + 1}.` {Format.Bold(userName)} ({GetText(strs.lineup_added_at(addedTime))}){(string.IsNullOrWhiteSpace(user.Reason) ? string.Empty : $" - {user.Reason}")}");
         }
 
         embed.WithDescription(sb.ToString());
@@ -96,7 +95,6 @@ public partial class LineUpCommands(LineUpService service, GuildTimezoneService 
     [UserPerm(GuildPerm.ManageMessages)]
     public async Task LineUpCreate()
     {
-        // Check if anyone is already in line. If so, maybe warn? Or just confirm.
         var lineup = await _service.GetLineupAsync(ctx.Guild.Id, ctx.Channel.Id);
         if (lineup.Count > 0)
         {
@@ -104,7 +102,6 @@ public partial class LineUpCommands(LineUpService service, GuildTimezoneService 
             return;
         }
 
-        // Just confirm that lineups can now be used in this channel
         await Response().Confirm(strs.lineup_created).SendAsync();
     }
 

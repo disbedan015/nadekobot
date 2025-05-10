@@ -8,16 +8,8 @@ namespace NadekoBot.Modules.Utility.LineUp;
 /// <summary>
 /// Service responsible for managing channel lineups.
 /// </summary>
-public class LineUpService(DbService db) : INService, IReadyExecutor
+public class LineUpService(DbService db) : INService
 {
-    private readonly DbService _db = db;
-
-    /// <summary>
-    /// Method called when the bot is ready. Can be used for initialization tasks.
-    /// </summary>
-    public Task OnReadyAsync()
-        => Task.CompletedTask;
-
     /// <summary>
     /// Tries to add a user to the lineup for a specific channel.
     /// </summary>
@@ -32,7 +24,7 @@ public class LineUpService(DbService db) : INService, IReadyExecutor
         ulong userId,
         string? reason)
     {
-        await using var ctx = _db.GetDbContext();
+        await using var ctx = db.GetDbContext();
 
         // Check if the user is already in the lineup for this channel
         var exists = await ctx.GetTable<LineUpUser>()
@@ -65,7 +57,7 @@ public class LineUpService(DbService db) : INService, IReadyExecutor
     /// <returns>True if the user was successfully removed, false otherwise.</returns>
     public async Task<bool> TryLeaveLineupAsync(ulong guildId, ulong channelId, ulong userId)
     {
-        await using var ctx = _db.GetDbContext();
+        await using var ctx = db.GetDbContext();
 
         var rowsAffected = await ctx.GetTable<LineUpUser>()
                                   .Where(lu => lu.GuildId == guildId && lu.ChannelId == channelId && lu.UserId == userId)
@@ -82,7 +74,7 @@ public class LineUpService(DbService db) : INService, IReadyExecutor
     /// <returns>The <see cref="LineUpUser"/> who was next, or null if the lineup is empty.</returns>
     public async Task<LineUpUser?> GetNextInLineupAsync(ulong guildId, ulong channelId)
     {
-        await using var ctx = _db.GetDbContext();
+        await using var ctx = db.GetDbContext();
 
         // Find the first user
         var nextUser = await ctx.GetTable<LineUpUser>()
@@ -109,7 +101,7 @@ public class LineUpService(DbService db) : INService, IReadyExecutor
     /// <returns>A list of <see cref="LineUpUser"/> currently in the lineup, ordered by joining time.</returns>
     public async Task<List<LineUpUser>> GetLineupAsync(ulong guildId, ulong channelId)
     {
-        await using var ctx = _db.GetDbContext();
+        await using var ctx = db.GetDbContext();
 
         return await ctx.GetTable<LineUpUser>()
                        .AsNoTracking()
@@ -127,7 +119,7 @@ public class LineUpService(DbService db) : INService, IReadyExecutor
     /// <returns>The 1-based position of the user, or null if not in the lineup.</returns>
     public async Task<int?> GetPositionAsync(ulong guildId, ulong channelId, ulong userId)
     {
-        await using var ctx = _db.GetDbContext();
+        await using var ctx = db.GetDbContext();
 
         // Get all users in order
         var lineup = await ctx.GetTable<LineUpUser>()
@@ -150,7 +142,7 @@ public class LineUpService(DbService db) : INService, IReadyExecutor
     /// <returns>True if the user is in the lineup, false otherwise.</returns>
     public async Task<bool> IsInLineupAsync(ulong guildId, ulong channelId, ulong userId)
     {
-        await using var ctx = _db.GetDbContext();
+        await using var ctx = db.GetDbContext();
         return await ctx.GetTable<LineUpUser>()
                        .AsNoTracking()
                        .AnyAsyncLinqToDB(lu => lu.GuildId == guildId && lu.ChannelId == channelId && lu.UserId == userId);
@@ -164,7 +156,7 @@ public class LineUpService(DbService db) : INService, IReadyExecutor
     /// <returns>The number of users removed from the lineup.</returns>
     public async Task<int> ClearLineupAsync(ulong guildId, ulong channelId)
     {
-        await using var ctx = _db.GetDbContext();
+        await using var ctx = db.GetDbContext();
 
         return await ctx.GetTable<LineUpUser>()
                       .Where(lu => lu.GuildId == guildId && lu.ChannelId == channelId)
