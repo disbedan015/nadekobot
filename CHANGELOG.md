@@ -2,6 +2,30 @@
 
 *a,c,f,r,o*
 
+## [6.2.0] - 
+
+### Added
+
+- Added `.hands` command - see a list of currently raised hands in your stage channel, in the chronological order
+- Added `.lineup` commands - users can line-up with an optional reason
+  - Moderators commands:
+    - `.lineupcreate` - Creates a new lineup that users can join
+    - `.lineupnext` - Removes the next user from the lineup and sends a message with that user's name
+    - `.lineupclear` - Clears the lineup
+    - `.lineupremoe` - Deletes the lineup (users can no longer join)
+  - User Commands:
+    - `.lineup` - join the line
+    - `.lineuplist` - see the current lineup
+    - `.lineupleave` - leave the lineup if you've previously joined
+
+### Changed
+
+- Waifus reworked
+  - ...
+- dev:
+  - strings now live next to each feature, they are merged in a pre-build msbuild task and sent to output
+  - responses, cmds and names (previously aliases) are now all .yml
+
 ## [6.1.7] - 14.04.2025
 
 ### Fixed
