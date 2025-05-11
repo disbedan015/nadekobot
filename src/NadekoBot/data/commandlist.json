@@ -8598,6 +8598,60 @@
       "Requirements": []
     }
   ],
+  "WnHCommands": [
+    {
+      "Aliases": [
+        ".waifu"
+      ],
+      "Description": "?",
+      "Usage": [
+        ".waifu"
+      ],
+      "Submodule": "WnHCommands",
+      "Module": "WnHCommands",
+      "Options": null,
+      "Requirements": []
+    },
+    {
+      "Aliases": [
+        ".hug"
+      ],
+      "Description": "?",
+      "Usage": [
+        ".hug"
+      ],
+      "Submodule": "WnHCommands",
+      "Module": "WnHCommands",
+      "Options": null,
+      "Requirements": []
+    },
+    {
+      "Aliases": [
+        ".pat"
+      ],
+      "Description": "?",
+      "Usage": [
+        ".pat"
+      ],
+      "Submodule": "WnHCommands",
+      "Module": "WnHCommands",
+      "Options": null,
+      "Requirements": []
+    },
+    {
+      "Aliases": [
+        ".kiss"
+      ],
+      "Description": "?",
+      "Usage": [
+        ".kiss"
+      ],
+      "Submodule": "WnHCommands",
+      "Module": "WnHCommands",
+      "Options": null,
+      "Requirements": []
+    }
+  ],
   "XkcdCommands": [
     {
       "Aliases": [

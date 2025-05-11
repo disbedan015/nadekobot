@@ -144,6 +144,10 @@
         <ResToMerge Include="Modules/**/strings/*.yml" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Modules\Waifus\Waifus&amp;Hubbies\strings\" />
+    </ItemGroup>
+
     <Target Name="MergeStringsTask" BeforeTargets="AfterBuild">
         <MergeStringsTask
             InputYmls="@(ResToMerge)"

@@ -24,6 +24,27 @@ Each waifu has
 - Price?
   - Would waifus be able to say "not for sale"? Or their owners?
 
+Itemization:
+- Head
+  - Hat
+  - Cap
+  - ...
+- Hair
+  - Style + color
+- Ears
+  - Elf ears
+  - Earrings
+  - ...
+- Eyes
+  - Color change
+  - Glasses
+  - Monocle
+  - ...
+- Face
+  - Style + Color
+- Torso
+  - 
+
 Actions:
 - Any user can .hug / .pat a waifu
   - This will boost waifu's stats for free, once daily
