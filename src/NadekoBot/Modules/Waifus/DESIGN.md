@@ -2,12 +2,6 @@
 
 - Each user is a waifu or a hubby (henceforth waifu)
 
-Self-Actions:
-  - You can opt out (lose all value, items, unclaim yourself, full delete) = free
-  - Opt back in = 30k
-  - You can swap w -> h or h -> w = 30k
-  - Request divorce (rename to release?)
-
 Each waifu has
 - Name/Id (discord)
 - A base image that represents it (avatar)
@@ -24,47 +18,37 @@ Each waifu has
 - Price?
   - Would waifus be able to say "not for sale"? Or their owners?
 
-Itemization:
-- Head
-  - Hat
-  - Cap
-  - ...
-- Hair
-  - Style + color
-- Ears
-  - Elf ears
-  - Earrings
-  - ...
-- Eyes
-  - Color change
-  - Glasses
-  - Monocle
-  - ...
-- Face
-  - Style + Color
-- Torso
-  - 
-
 Actions:
-- Any user can .hug / .pat a waifu
-  - This will boost waifu's stats for free, once daily
-- You get 2 actions per day
+
+opt in / opt out (lose all value, items, unclaim yourself, full delete) = free 
+Opt back in = 30k
+pick a base image 
+You can swap w -> h or h -> w = 15k
+buy a head, color, eyes, suit, ear slots
+
+place offer on waifu
+waifu can accept/decline if unclaimed
+owner can accept/decline if claimed
+accept -> your waifu, net worth proportional to amount
+decline -> nothing
+
+Any user can .hug / .pat a waifu
+    - This will boost waifu's stats for free, once daily
+You get 2 actions per day
     - +4 if you vote
     - +1-6 if you're patron
+increase stat
+same club = bonus stats
 
-Claiming:
-- Needs to be figured out
+gift waifu
+increase value
+    waifu gets club xp
 
-Clubs:
-- Rename to cartels?
-- Limit members?
-- ???
+Quests
+    Perform a waifu action
 
-Quests:
-- Perform a waifu action
-
-Problems:
-- What to do with the current items?
-- How would the new itemization work?
-- Goal?
--
+Clubs
+    Rename to cartels
+    waifu owners join, limited slots
+    buy more slots
+    actions on waifus in a club have stronger effect
