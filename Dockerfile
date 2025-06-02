@@ -29,12 +29,12 @@ WORKDIR /app
 
 # Music dependencies
 ADD --chmod=755 https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp_linux /usr/local/bin/yt-dlp
-RUN apk add --no-cache ffmpeg libsodium
+RUN apk add --no-cache ffmpeg libsodium 
 
 # Required dependencies
 # icu-libs is required for globalization
 RUN apk update; \
-    apk add --no-cache libstdc++ libgcc icu-libs libc6-compat \
+    apk add --no-cache libstdc++ libgcc icu-libs libc6-compat tzdata \
     && rm -rf /var/cache/apk/*;
 
 COPY --from=build /app ./
